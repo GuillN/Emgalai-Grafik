@@ -10,7 +10,7 @@
     "lodash": "^4.17.20",
     "minimist": "^1.2.5",
     "node-forge": "^0.10.0",
-    "object-path": "^0.11.5",
+    "object-path": "^0.11.8",
     "react": "^17.0.1",
     "react-delay-link": "^1.1.4",
     "react-device-detect": "^1.15.0",
