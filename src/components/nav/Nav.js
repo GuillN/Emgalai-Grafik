@@ -2,23 +2,23 @@ import React, {useState, useEffect} from "react"
 import {MobileView, BrowserView} from "react-device-detect"
 import {Link} from "react-router-dom";
 import {history} from "../../helpers/history";
-import {whiteUrls} from "../../helpers/urlGroups";
+//import {whiteUrls} from "../../helpers/urlGroups";
 import './nav.css'
 import logo1Black from "../../images/logo.svg";
 import logo1White from "../../images/logo-whito.svg";
 import logo2Black from "../../images/emgalaiprint SIMPLE logo.svg";
 import logo2White from "../../images/emgalaiprint SIMPLE logoBLANC.png";
 import NavLink from "./NavLink";
-import NavDropLink from "./NavDropLink";
+// import NavDropLink from "./NavDropLink";
 import NavDropLinkMobile from "./NavDropLinkMobile";
 
 const Nav = () => {
-    const [isWhite] = useState(whiteUrls.includes(history.location.pathname))
+    //const [isWhite] = useState(whiteUrls.includes(history.location.pathname))
     const [isPrint] = useState(history.location.pathname.split('/')[1].includes("print"))
 
     const [logo, setLogo] = useState()
 
-    const [isPoster] = useState(history.location.pathname === '/posters')
+    //const [isPoster] = useState(history.location.pathname === '/posters')
 
     useEffect(() => {
         setLogo(isPrint ? isWhite ? logo2White : logo2Black : isWhite ? logo1White : logo1Black)
@@ -35,7 +35,7 @@ const Nav = () => {
 
         {/*LINKS*/}
         <BrowserView>
-            <section style={isPoster ? {backgroundColor: 'black'} : {}} className="nav">
+            <section /*style={isPoster ? {backgroundColor: 'black'} : {}}*/ className="nav">
                 {isPrint ?
                   <NavLink isWhite={isWhite} text={'about'} url={'/print/about'}/> :
                   <NavLink isWhite={isWhite} text={'about'} url={'/about'}/>
@@ -47,18 +47,28 @@ const Nav = () => {
                 }
 
                 {isPrint ?
-                    <NavDropLink isWhite={isWhite} text={'prints'}/> :
-                    <NavLink isWhite={isWhite} text={'identité visuelle'} url={'/visual-identity'}/>
+                    <NavLink isWhite={isWhite} text={'prints'}/> :
+                    <NavLink isWhite={isWhite} text={'editions'} url={'/editions'}/>
                 }
 
                 {isPrint ?
                     <></> :
-                    <NavDropLink isWhite={isWhite} text={'works'}/>
+                    <NavLink isWhite={isWhite} text={'music'} url={'/music'}/>
                 }
 
                 {isPrint ?
                     <></> :
-                    <NavDropLink isWhite={isWhite} text={'shop'}/>
+                    <NavLink isWhite={isWhite} text={'gig posters'} url={'/posters'}/>
+                }
+
+                {isPrint ?
+                    <></> :
+                    <NavLink isWhite={isWhite} text={'logos'} url={'/logos'}/>
+                }
+
+                {isPrint ?
+                    <></> :
+                    <NavLink isWhite={isWhite} text={'shop'}/>
                 }
             </section>
         </BrowserView>

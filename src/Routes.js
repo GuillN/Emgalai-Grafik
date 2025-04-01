@@ -20,14 +20,28 @@ export default () => {
             <Route path="/about" component={About}/>
             <Route path="/print/about" component={About}/>
             <Route path="/contact" component={Contact}/>
+            <Route path="/editions" component={Previewer}/>
+            <Route path="/editions/:id" component={Displayer}/>
+
+            <Route path="/music" exact component={Previewer}/>
+            <Route path="/albums" exact component={Previewer}/>
+            <Route path="/albums/:id" component={Displayer}/>
+            <Route path="/merch" exact component={Previewer}/>
+            <Route path="/merch/:id" component={Displayer}/>
+            <Route path="/packaging" exact component={Previewer}/>
+            <Route path="/packaging/:id" component={Displayer}/>
             <Route path="/visual-identity" exact component={Previewer}/>
             <Route path="/visual-identity/:id" component={Displayer}/>
-            <Route path="/works" exact component={Previewer}/>
-            <Route path="/works/:id" component={Displayer}/>
-            <Route path="/posters" exact component={PostersDetails}/>
-            <Route path="/logos/all" component={Displayer}/>
-            <Route path="/music" exact component={Previewer}/>
-            <Route path="/music/:id" component={Displayer}/>
+            
+            {/* <Route path="/works" exact component={Previewer}/> */}
+            {/* <Route path="/works/:id" component={Displayer}/> */}
+            <Route path="/posters" exact component={Previewer}/>
+            <Route path="/posters/:id" exact component={Displayer}/>
+            <Route path="/logos" component={Displayer}/>
+            {/* <Route path="/logos" exact component={Previewer}/> */}
+            {/* <Route path="/logos/:id" exact component={Displayer}/> */}
+
+            {/* <Route path="/music/:id" component={Displayer}/> */}
             <Route path="/shop" component={Shop}/>
             <Route path="/print/devis" component={Devis}/>
             <Route key="tsh" path="/print/tshirts" exact component={Previewer}/>

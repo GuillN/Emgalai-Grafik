@@ -1,10 +1,10 @@
-export const whiteUrls = [
+/*export const whiteUrls = [
     "/portfolio",
     "/print",
     "/posters"
-]
+]*/
 
-export const dropUrls = [
+/*export const dropUrls = [
     {
         title: 'works',
         links: [
@@ -78,4 +78,4 @@ export const dropUrls = [
             }
         ]
     }
-]
+]*/

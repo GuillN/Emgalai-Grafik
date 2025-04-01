@@ -1,6 +1,18 @@
 import React, {useEffect, useState} from "react"
 import {Link} from "react-router-dom";
-import {visuIdArray, tshirtArray, workArray, musicArray, cassetteArray, vinylArray, cdArray, othersArray} from "../../helpers/imageArrays"
+import {
+    editionArray,
+    musicArray,
+    albumArray,
+    merchArray,
+    packagingArray,
+    visuIdArray,
+    posterArray,
+    tshirtArray,
+    cassetteArray,
+    vinylArray,
+    cdArray,
+    othersArray} from "../../helpers/imageArrays"
 import Items from "../items/items";
 import {history} from "../../helpers/history";
 import './Previewer.css'
@@ -17,21 +29,47 @@ const Previewer = props => {
     useEffect(() => {
         const path = history.location.pathname;
         switch (path) {
-          case '/visual-identity':
-            setUrl('visual-identity')
-            setArray(visuIdArray)
-            setIsPrint(false)
-            break
-            case '/works':
-                setUrl('works')
-                setArray(workArray)
+            case '/editions':
+                setUrl('editions')
+                setArray(editionArray)
                 setIsPrint(false)
                 break
-              case '/music':
+            case '/music':
                 setUrl('music')
                 setArray(musicArray)
                 setIsPrint(false)
                 break
+            case '/albums':
+                setUrl('albums')
+                setArray(albumArray)
+                setIsPrint(false)
+                break
+            case '/merch':
+                setUrl('merch')
+                setArray(merchArray)
+                setIsPrint(false)
+                break
+            case '/packaging':
+                setUrl('packaging')
+                setArray(packagingArray)
+                setIsPrint(false)
+                break
+            case '/visual-identity':
+                setUrl('visual-identity')
+                setArray(visuIdArray)
+                setIsPrint(false)
+                break
+            case '/posters':
+                setUrl('posters')
+                setArray(posterArray)
+                setIsPrint(false)
+                break
+            /*case '/works':
+                setUrl('works')
+                setArray(workArray)
+                setIsPrint(false)
+                break*/
+            
             // case '/prints':
             //     console.log('Previewer - Prints')
             //     setUrl('prints')
@@ -64,12 +102,7 @@ const Previewer = props => {
                 setArray(othersArray)
                 setIsPrint(true)
                 break
-            // todo
-            // case '/posters':
-            //     setUrl('posters')
-            //     setArray(posterArray)
-            //     setIsPrint(true)
-            //     break
+            
 
             default:
                 break

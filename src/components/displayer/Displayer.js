@@ -4,15 +4,19 @@ import PopupImage from "../items/popupImage";
 import Media from "./Media"
 import {MobileView, BrowserView} from "react-device-detect"
 import {
-    visuIdArray,
-    logoArray,
-    tshirtArray,
-    musicArray,
-    workArray,
-    cassetteArray,
-    vinylArray,
-    cdArray,
-    othersArray
+  editionArray,
+  musicArray,
+  albumArray,
+  merchArray,
+  packagingArray,
+  visuIdArray,
+  posterArray,
+  logoArray,
+  tshirtArray,
+  cassetteArray,
+  vinylArray,
+  cdArray,
+  othersArray
 } from "../../helpers/imageArrays";
 import {history} from "../../helpers/history";
 import './Displayer.css'
@@ -32,24 +36,60 @@ const Displayer = props => {
 
     useEffect(() => {
         switch (pathName) {
+          case 'editions':
+            setClient(editionArray[id])
+            setImages(editionArray[id].images)
+            setVideos(editionArray[id].videos)
+            setImageIndex(editionArray[id].imageIndex)
+            break
+          case 'music':
+            setClient(musicArray[id])
+            setImages(musicArray[id].images)
+            setVideos(musicArray[id].videos)
+            setImageIndex(musicArray[id].imageIndex)
+            break
+          case 'albums':
+            setClient(albumArray[id])
+            setImages(albumArray[id].images)
+            setVideos(albumArray[id].videos)
+            setImageIndex(albumArray[id].imageIndex)
+            break
+          case 'merch':
+            setClient(merchArray[id])
+            setImages(merchArray[id].images)
+            setVideos(merchArray[id].videos)
+            setImageIndex(merchArray[id].imageIndex)
+            break
+          case 'packaging':
+            setClient(packagingArray[id])
+            setImages(packagingArray[id].images)
+            setVideos(packagingArray[id].videos)
+            setImageIndex(packagingArray[id].imageIndex)
+            break
           case 'visual-identity':
             setClient(visuIdArray[id])
             setImages(visuIdArray[id].images)
             setVideos(visuIdArray[id].videos)
             setImageIndex(visuIdArray[id].imageIndex)
             break
-          case 'works':
-              setClient(workArray[id])
-              setImages(workArray[id].images)
-              setVideos(workArray[id].videos)
-              setImageIndex(workArray[id].imageIndex)
-              break
-          case 'music':
-              setClient(musicArray[id])
-              setImages(musicArray[id].images)
-              setVideos(musicArray[id].videos)
-              setImageIndex(musicArray[id].imageIndex)
-              break
+          case 'posters':
+            setClient(posterArray[id])
+            setImages(posterArray[id].images)
+            setVideos(posterArray[id].videos)
+            setImageIndex(posterArray[id].imageIndex)
+            break
+          // case 'works':
+          //     setClient(workArray[id])
+          //     setImages(workArray[id].images)
+          //     setVideos(workArray[id].videos)
+          //     setImageIndex(workArray[id].imageIndex)
+          //     break
+          // case 'music':
+          //     setClient(musicArray[id])
+          //     setImages(musicArray[id].images)
+          //     setVideos(musicArray[id].videos)
+          //     setImageIndex(musicArray[id].imageIndex)
+          //     break
           case 'logos':
               setClient(logoArray)
               setImages(logoArray.images)

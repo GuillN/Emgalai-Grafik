@@ -1,15 +1,20 @@
+import aetheria_cover from '../images/aetheria/Aetheria.jpg'
+import alt_cover from '../images/alt/1.jpg'
 import af_cover from '../images/cassettes/acces_de_faiblesse/70229637_911070585930378_6026411403500322816_n.jpg'
 import aguire_cover from '../images/aguire/1.jpg'
-import cortoni_cover from '../images/cortoni/CORELIAN.jpg'
+import brus_cover from '../images/brus/uz-1.jpg'
 import dark_tshirt_cover from "../images/tshirts/darkspace/dark_tish_carré.jpg"
 import gate_tshirt_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
 import rib_tshirt_cover from "../images/tshirts/rib/67567580_1310293545798865_9137664366735261696_o.jpg"
 import aluk_cover from '../images/aluk_todolo/carré-site.jpg'
+import cerbere from '../images/cerbere/CERBERE.jpg'
 import chaos_cover from '../images/chaos/Capture d’écran 2022-08-16 à 17.07.02.png'
 import conan_cover from '../images/conan/3.jpg'
 import cult_cover from '../images/cult_of_fire/3.jpg'
+import cratophane from '../images/cratophane/artwork-web.jpg'
 import darkspace_cover from '../images/darkspace/ZOOM3.jpg'
 import doom_cover from '../images/doom/61171990_1260684680759752_8179678087525433344_o.jpg'
+import edc_cover from '../images/edc/format 5_4.jpg'
 import escarion_cover from '../images/escarion/Escarion-Envy.jpg'
 import glazart_cover from '../images/glazart/glaz-carré.jpg'
 import goblin_cover from '../images/goblin/6.jpg'
@@ -20,14 +25,21 @@ import metalorgie_cover from '../images/metalorgie/carré.jpg'
 import mongolito_cover from '../images/cd/mongolito/carré-en-fait-.jpg'
 import mysticum_cover from '../images/mysticum/3.jpg'
 import nespresso_cover from '../images/nespresso/08_DSC_8518.jpg'
-import penn_cover from '../images/penn_men/cover.jpg'
+import ocean_cover from '../images/ocean/the-ocean-v2.jpg'
+import pyramid_cover from '../images/pyramid/440749533_1009476647844876_682177891020959344_n.jpg'
 import rio_cover from '../images/rio/3.jpg'
 import rocketgum_cover from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
+import sabbath_cover from '../images/sabbath/487801095_641621711822992_1887295652323717847_n.jpg'
 import structure_cover from '../images/structure/5.jpg'
 import sunn_cover from '../images/sunn/1 (1).jpg'
+import sylvaine_cover from '../images/sylvaine/Sylvaine-MockUp_IceGrey.jpg'
 import ulver_cover from '../images/ulver/zoom-3.jpg'
+import ulver_edition_cover from '../images/ulver_edition/1P2660406.jpg'
 import urbanfest_cover from '../images/urban_fest/12898318_576300052531555_183095972173381426_o.jpg'
 import vaurien_cover from '../images/cassettes/vaurien/1.jpg'
+import valve_cover from '../images/valve/1.jpg'
+import weidorje_cover from '../images/weidorje/1.jpg'
+import yonl_cover from '../images/yonl/391592645_869914208467788_1466262634874456979_n.jpg'
 
 // import tshirts_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
 // import vinyls_cover from "../images/vinyls/carré-en-fait-.jpg"
@@ -35,15 +47,20 @@ import vaurien_cover from '../images/cassettes/vaurien/1.jpg'
 // import cd_cover from ""
 
 import {
+    aetheria,
     af,
     aluk,
+    alt,
     aguire,
+    brus,
+    cerbere,
     chaos,
     conan,
-    cortoni,
+    cratophane,
     cult,
     darkspace,
     doom,
+    edc,
     escarion,
     glazart,
     goblin,
@@ -54,62 +71,352 @@ import {
     mongolito,
     mysticum,
     nespresso,
-    penn,
+    ocean,
+    pyramid,
     rio,
     rocketgum,
+    sabbath,
     structure,
     sunn,
+    sylvaine,
     ulver,
+    ulver_edition,
+    valve,
     vaurien,
+    weidorje,
     tshirtDark,
     tshirtGate,
     tshirtRib,
     urbanfest,
+    yonl,
 } from './images'
 import {logos} from './images'
 
-export const musicArray = [
-  {
-     images: chaos,
-     videos: ['8_AlRJW3SRs'],
-     cover: chaos_cover,
-     title: 'Chaos E.T. Sexual',
-     imageIndex: [0,1,2,3,4,5,6,7,8],
-     videoIndex: [9],
-     medIndex: [],
-     squareIndex: [2,3,4,5,6,7],
-     smallIndex: [],
-     tinyIndex: []
-   },
-   {
-      images: aguire,
-      cover: aguire_cover,
-      title: 'Aguirre',
-      videos: [],
-      imageIndex: [0,1,2,3,4],
-      videoIndex: [],
-      medIndex: [],
-      squareIndex: [1,2,3,4],
-      smallIndex: [],
-      tinyIndex: []
-    },
+export const editionArray = [
     {
-       images: cortoni,
-       cover: cortoni_cover,
-       title: 'Cortoni',
+       images: brus,
        videos: [],
-       imageIndex: [0,1],
+       cover: brus_cover,
+       title: 'Brus Undazir',
+       imageIndex: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
        videoIndex: [],
        medIndex: [],
        squareIndex: [],
        smallIndex: [],
        tinyIndex: []
-     }
+     },
+     {
+        images: sabbath,
+        videos: [],
+        cover: sabbath_cover,
+        title: 'Sabbath 66',
+        imageIndex: [0,1,2,3,4],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+      },
+      {
+        images: structure,
+        videos: [],
+        cover: structure_cover,
+        title: 'Structure',
+        imageIndex: [0,1,2,3,4,5],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [2,3,4],
+        tinyIndex: []
+      },
+      {
+        images: ulver_edition,
+        videos: [],
+        cover: ulver_edition_cover,
+        title: 'Ulver',
+        imageIndex: [0,1,2,3,4,5,6,7,8,9,10],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+      },
 ]
+
+export const musicArray = [
+  
+   
+    
+]
+
+export const albumArray = [
+    {
+       images: aetheria,
+       videos: [],
+       cover: aetheria_cover,
+       title: 'Aetheria Constentia',
+       imageIndex: [0,1,2,3,4],
+       videoIndex: [],
+       medIndex: [],
+       squareIndex: [],
+       smallIndex: [],
+       tinyIndex: []
+     },
+     {
+        images: aguire,
+        cover: aguire_cover,
+        title: 'Aguirre',
+        videos: [],
+        imageIndex: [0,1,2,3,4],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [1,2,3,4],
+        smallIndex: [],
+        tinyIndex: []
+      },
+      {
+        images: chaos,
+        videos: ['8_AlRJW3SRs'],
+        cover: chaos_cover,
+        title: 'Chaos E.T. Sexual',
+        imageIndex: [0,1,2,3,4,5,6,7,8],
+        videoIndex: [9],
+        medIndex: [],
+        squareIndex: [2,3,4,5,6,7],
+        smallIndex: [],
+        tinyIndex: []
+      },
+      {
+        images: cratophane,
+        cover: cratophane_cover,
+        title: 'Cortoni',
+        videos: [],
+        imageIndex: [0,1,2,3,4,5],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+      },
+      {
+        images: escarion,
+        cover: escarion_cover,
+        title: 'Escarion',
+        text: "Cover design made for the Australian death metal band Escarion",
+        medIndex: [],
+        smallIndex: [],
+        videos: [],
+        imageIndex: [0],
+        videoIndex: [],
+        squareIndex: [],
+        tinyIndex: []
+    },
+      {
+        images: valve,
+        cover: valve_cover,
+        title: 'Valve',
+        videos: [],
+        imageIndex: [0,1,2],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+      },
+      {
+        images: weidorje,
+        cover: weidorje_cover,
+        title: 'Weidorje',
+        videos: [],
+        imageIndex: [0,1,2],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+      }
+]
+
+export const merchArray = [
+    {
+        images: aluk,
+        cover: aluk_cover,
+        title: 'Aluk Todolo',
+        text: "Poster / T-Shirt / Tote bag for the french blackened kraut rock band Aluk Todolo\n\nLimited screenprinted poster for the Lille show\nLimited to 25 copies",
+        imageIndex: [0,1,2,3],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [1,2],
+        smallIndex: [],
+        tinyIndex: [],
+        videos: []
+    },
+    {
+        images: cerbere,
+        cover: cerbere_cover,
+        title: 'Cerbere',
+        imageIndex: [0,1],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: [],
+        videos: []
+    },
+    {
+        images: sylvaine,
+        cover: sylvaine_cover,
+        title: 'Sylvaine',
+        imageIndex: [0,1,2],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: [],
+        videos: []
+    },
+    {
+        images: yonl,
+        cover: yonl_cover,
+        title: 'Year Of No Light',
+        imageIndex: [0,1,2,3,4,5],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: [],
+        videos: []
+    },
+    {
+        images: ocean,
+        cover: ocean_cover,
+        title: 'The Ocean',
+        imageIndex: [0,1,2],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: [],
+        videos: []
+    },
+]
+
+export const packagingArray = [
+    {
+       images: alt,
+       videos: [],
+       cover: alt_cover,
+       title: 'Alt236',
+       imageIndex: [0,1,2,3,4,5,6,7,8,9,10,11,12],
+       videoIndex: [],
+       medIndex: [],
+       squareIndex: [],
+       smallIndex: [],
+       tinyIndex: []
+     },
+     {
+        images: pyramid,
+        videos: [],
+        cover: pyramid_cover,
+        title: 'Black Pyramid',
+        imageIndex: [0,1,2,3,4,5,6,7],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+      },
+]
+
+export const visuIdArray = [
+    {
+        images: hifi,
+        videos: [],
+        cover: hifi_cover,
+        title: 'Hifi Store',
+        text: "Graphics for the Hifi store - Paris\n",
+        imageIndex: [0,1,2,3,4,5],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+    },
+    {
+        images: rio,
+        videos: [],
+        cover: rio_cover,
+        title: 'RIO',
+        text: "This was my last year project of my graphic design studies at LISAA\nI redesigned all the graphics of the Rock in Opposition Festival taking place at Albi on an old industrial land\nThis is an underground festival about RIO music / progressive rock / Canterbury scene",
+        imageIndex: [0,1,2,3,4,5,6,7,8],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+    },
+    {
+      images: structure,
+      videos: [],
+      cover: structure_cover,
+      title: 'Structure',
+      imageIndex: [0,1,2,3,4,5],
+      videoIndex: [],
+      medIndex: [],
+      squareIndex: [],
+      smallIndex: [2,3,4],
+      tinyIndex: []
+    },
+    {
+        images: edc,
+        videos: [],
+        cover: edc_cover,
+        title: 'EDC',
+        imageIndex: [0,1,2],
+        videoIndex: [],
+        medIndex: [],
+        squareIndex: [],
+        smallIndex: [],
+        tinyIndex: []
+      },
+      {
+        images: glazart,
+        cover: glazart_cover,
+        title: 'Glazart',
+        text: "Artworks for the night club Glazart, porte de la Villette - Paris",
+        medIndex: [],
+        smallIndex: [],
+        videos: [],
+        imageIndex: [0,1,2,3,4,5],
+        videoIndex: [],
+        squareIndex: [],
+        tinyIndex: [0,1,2,3,4,5]
+    },
+    {
+        images: metalorgie,
+        cover: metalorgie_cover,
+        title: 'Metalorgie Fest',
+        text: "Designs for the French webzine Metalorgie's Festival\nLogo / flyers / ads / limited screenprinted poster\nLimited to 30 copies",
+        medIndex: [],
+        smallIndex: [],
+        videos: [],
+        imageIndex: [0,1,2,3,4,5,6,7,8],
+        videoIndex: [],
+        squareIndex: [0,1],
+        tinyIndex: []
+    },
+  ]
+
+export const posterArray = {
+    images: posters,
+    medIndex: [],
+    smallIndex: [],
+    video: null
+}
 
 export const logoArray = {
     images: logos,
-    imageIndex: [0,1,2,3,4,5,6,7],
+    imageIndex: [0,1,2,3,4,5,6,7,8,9,10,11],
     medIndex: [],
     smallIndex: [],
     videoIndex: [],
@@ -119,6 +426,8 @@ export const logoArray = {
     tinyIndex: [],
     videos: []
 }
+
+
 
 export const tshirtArray = [
     {
@@ -220,13 +529,8 @@ export const cassetteArray = [
     }
 ]
 
-// todo
-// export const posterArray = {
-//     images: posters,
-//     medIndex: [],
-//     smallIndex: [],
-//     video: null
-// }
+
+
 
 export const othersArray = [
     {
@@ -244,73 +548,10 @@ export const othersArray = [
     }
 ]
 
-export const visuIdArray = [
-  {
-      images: hifi,
-      videos: [],
-      cover: hifi_cover,
-      title: 'Hifi Store',
-      text: "Graphics for the Hifi store - Paris\n",
-      imageIndex: [0,1,2,3,4,5],
-      videoIndex: [],
-      medIndex: [],
-      squareIndex: [],
-      smallIndex: [],
-      tinyIndex: []
-  },
-  {
-      images: rio,
-      videos: [],
-      cover: rio_cover,
-      title: 'RIO',
-      text: "This was my last year project of my graphic design studies at LISAA\nI redesigned all the graphics of the Rock in Opposition Festival taking place at Albi on an old industrial land\nThis is an underground festival about RIO music / progressive rock / Canterbury scene",
-      imageIndex: [0,1,2,3,4,5,6,7,8],
-      videoIndex: [],
-      medIndex: [],
-      squareIndex: [],
-      smallIndex: [],
-      tinyIndex: []
-  },
-  {
-    images: penn,
-    videos: [],
-    cover: penn_cover,
-    title: 'Penn Men',
-    imageIndex: [0,1,2,3,4,5],
-    videoIndex: [],
-    medIndex: [1],
-    squareIndex: [2,3,4,5],
-    smallIndex: [],
-    tinyIndex: []
-  },
-  {
-    images: structure,
-    videos: [],
-    cover: structure_cover,
-    title: 'Structure',
-    imageIndex: [0,1,2,3,4,5],
-    videoIndex: [],
-    medIndex: [],
-    squareIndex: [],
-    smallIndex: [2,3,4],
-    tinyIndex: []
-  }
-]
+
 
 export const workArray = [
-    {
-        images: aluk,
-        cover: aluk_cover,
-        title: 'Aluk Todolo',
-        text: "Poster / T-Shirt / Tote bag for the french blackened kraut rock band Aluk Todolo\n\nLimited screenprinted poster for the Lille show\nLimited to 25 copies",
-        imageIndex: [0,1,2,3],
-        videoIndex: [],
-        medIndex: [],
-        squareIndex: [1,2],
-        smallIndex: [],
-        tinyIndex: [],
-        videos: []
-    },
+    
     {
         images: conan,
         cover: conan_cover,
@@ -363,32 +604,8 @@ export const workArray = [
         squareIndex: [1,2],
         tinyIndex: []
     },
-    {
-        images: escarion,
-        cover: escarion_cover,
-        title: 'Escarion',
-        text: "Cover design made for the Australian death metal band Escarion",
-        medIndex: [],
-        smallIndex: [],
-        videos: [],
-        imageIndex: [0],
-        videoIndex: [],
-        squareIndex: [],
-        tinyIndex: []
-    },
-    {
-        images: glazart,
-        cover: glazart_cover,
-        title: 'Glazart',
-        text: "Artworks for the night club Glazart, porte de la Villette - Paris",
-        medIndex: [],
-        smallIndex: [],
-        videos: [],
-        imageIndex: [0,1,2,3,4,5],
-        videoIndex: [],
-        squareIndex: [],
-        tinyIndex: [0,1,2,3,4,5]
-    },
+    
+    
     {
         images: goblin,
         cover: goblin_cover,
@@ -428,19 +645,7 @@ export const workArray = [
         squareIndex: [],
         tinyIndex: []
     },
-    {
-        images: metalorgie,
-        cover: metalorgie_cover,
-        title: 'Metalorgie Fest',
-        text: "Designs for the French webzine Metalorgie's Festival\nLogo / flyers / ads / limited screenprinted poster\nLimited to 30 copies",
-        medIndex: [],
-        smallIndex: [],
-        videos: [],
-        imageIndex: [0,1,2,3,4,5,6,7,8],
-        videoIndex: [],
-        squareIndex: [0,1],
-        tinyIndex: []
-    },
+    
     {
         images: mysticum,
         cover: mysticum_cover,
