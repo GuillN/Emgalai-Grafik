@@ -5,8 +5,8 @@ export const whiteUrls = [
     "/posters"
 ]
 
-/*export const dropUrls = [
-    {
+export const dropUrls = []
+/*    {
         title: 'works',
         links: [
             {
