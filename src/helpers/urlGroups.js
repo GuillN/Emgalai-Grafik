@@ -1,9 +1,9 @@
 /* eslint-disable */
-/*export const whiteUrls = [
+export const whiteUrls = [
     "/portfolio",
     "/print",
     "/posters"
-]*/
+]
 
 /*export const dropUrls = [
     {

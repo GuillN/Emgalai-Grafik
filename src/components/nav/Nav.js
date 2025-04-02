@@ -14,7 +14,7 @@ import NavLink from "./NavLink";
 import NavDropLinkMobile from "./NavDropLinkMobile";
 
 const Nav = () => {
-    //const [isWhite] = useState(whiteUrls.includes(history.location.pathname))
+    const [isWhite] = useState(whiteUrls.includes(history.location.pathname))
     const [isPrint] = useState(history.location.pathname.split('/')[1].includes("print"))
 
     const [logo, setLogo] = useState()
@@ -24,6 +24,7 @@ const Nav = () => {
     useEffect(() => {
         setLogo(isPrint ? isWhite ? logo2White : logo2Black : isWhite ? logo1White : logo1Black)
     }, [isPrint, isWhite])
+
 
     return <div>
 
