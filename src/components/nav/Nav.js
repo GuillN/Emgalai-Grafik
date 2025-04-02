@@ -29,7 +29,7 @@ const Nav = () => {
     return <div>
 
         {/*LOGO*/}
-        <header style={isPoster ? {backgroundColor: 'black'} : {}} className="header">
+        <header /*style={isPoster ? {backgroundColor: 'black'} : {}}*/ className="header">
             <Link to="/" className="logo-link">
                 <img src={logo} className="logo" alt="logo"/>
             </Link>
