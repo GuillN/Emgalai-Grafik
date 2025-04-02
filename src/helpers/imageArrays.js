@@ -408,12 +408,12 @@ export const visuIdArray = [
     },
   ]
 
-export const posterArray = {
-    images: posters,
-    medIndex: [],
-    smallIndex: [],
-    video: null
-}
+// export const posterArray = {
+//     images: posters,
+//     medIndex: [],
+//     smallIndex: [],
+//     video: null
+// }
 
 export const logoArray = {
     images: logos,
