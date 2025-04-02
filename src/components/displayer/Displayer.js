@@ -11,7 +11,7 @@ import {
   merchArray,
   packagingArray,
   visuIdArray,
-  posterArray,
+  //posterArray,
   logoArray,
   tshirtArray,
   cassetteArray,
@@ -73,12 +73,12 @@ const Displayer = props => {
             setVideos(visuIdArray[id].videos)
             setImageIndex(visuIdArray[id].imageIndex)
             break
-          case 'posters':
-            setClient(posterArray[id])
-            setImages(posterArray[id].images)
-            setVideos(posterArray[id].videos)
-            setImageIndex(posterArray[id].imageIndex)
-            break
+          // case 'posters':
+          //   setClient(posterArray[id])
+          //   setImages(posterArray[id].images)
+          //   setVideos(posterArray[id].videos)
+          //   setImageIndex(posterArray[id].imageIndex)
+          //   break
           // case 'works':
           //     setClient(workArray[id])
           //     setImages(workArray[id].images)

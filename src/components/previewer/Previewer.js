@@ -8,7 +8,7 @@ import {
     merchArray,
     packagingArray,
     visuIdArray,
-    posterArray,
+    // posterArray,
     tshirtArray,
     cassetteArray,
     vinylArray,
@@ -60,11 +60,11 @@ const Previewer = props => {
                 setArray(visuIdArray)
                 setIsPrint(false)
                 break
-            case '/posters':
-                setUrl('posters')
-                setArray(posterArray)
-                setIsPrint(false)
-                break
+            // case '/posters':
+            //     setUrl('posters')
+            //     setArray(posterArray)
+            //     setIsPrint(false)
+            //     break
             /*case '/works':
                 setUrl('works')
                 setArray(workArray)
