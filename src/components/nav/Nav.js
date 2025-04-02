@@ -75,7 +75,7 @@ const Nav = () => {
             </section>
         </BrowserView>
         <MobileView>
-            <section style={isPoster ? {backgroundColor: 'black'} : {}} className="nav">
+            <section /*style={isPoster ? {backgroundColor: 'black'} : {}}*/ className="nav">
             {isPrint ?
               <NavLink isWhite={isWhite} text={'about'} url={'/print/about'}/> :
               <NavLink isWhite={isWhite} text={'about'} url={'/about'}/>
