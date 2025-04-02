@@ -3,7 +3,7 @@ import React, {useState, useEffect} from "react"
 import {MobileView, BrowserView} from "react-device-detect"
 import {Link} from "react-router-dom";
 import {history} from "../../helpers/history";
-//import {whiteUrls} from "../../helpers/urlGroups";
+import {whiteUrls} from "../../helpers/urlGroups";
 import './nav.css'
 import logo1Black from "../../images/logo.svg";
 import logo1White from "../../images/logo-whito.svg";
