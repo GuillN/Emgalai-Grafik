@@ -8,7 +8,7 @@ import Routes from "./Routes"
 
 const App = () => {
     return <div className="App">
-        <ReactNotification/>
+        {/* <ReactNotification/> */}
         <Router history={history}>
             <Routes/>
         </Router>
