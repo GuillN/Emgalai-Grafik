@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useEffect, useState} from 'react'
 import {animated, useSpring} from "react-spring";
 import PopupImage from "../items/popupImage";

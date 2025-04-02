@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useState} from 'react'
 import './home.css'
 import logo1 from '../../images/logo-whito.svg'

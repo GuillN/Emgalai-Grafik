@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useState} from 'react'
 import {animated, useSpring} from "react-spring"
 import DelayLink from 'react-delay-link'

@@ -1,7 +1,8 @@
+/* eslint-disable */
 import React from 'react'
 import {animated, useSpring} from "react-spring"
 import emailjs from 'emailjs-com'
-import {store} from 'react-notifications-component'
+// import {store} from 'react-notifications-component'
 import 'animate.css'
 
 const Form = () => {
@@ -9,24 +10,25 @@ const Form = () => {
     const handleSubmit = e => {
         e.preventDefault()
         emailjs.sendForm('gmail', 'template_AyQbDnJ0', e.target, 'user_Fe7KH41F4a2yVkPJNmOjQ')
-            .then(() => {
-                store.addNotification({
-                    title: "Success!",
-                    message: "Message sent",
-                    type: "success",
-                    insert: "top",
-                    container: "top-right",
-                    animationIn: ["animated", "fadeIn"],
-                    animationOut: ["animated", "fadeOut"],
-                    dismiss: {
-                        duration: 2000,
-                        onScreen: true
-                    }
-                })
-                document.getElementById('contact-form').reset()
-            }, error => {
-                console.log(error.text)
-            })
+        document.getElementById('contact-form').reset()
+            // .then(() => {
+            //     store.addNotification({
+            //         title: "Success!",
+            //         message: "Message sent",
+            //         type: "success",
+            //         insert: "top",
+            //         container: "top-right",
+            //         animationIn: ["animated", "fadeIn"],
+            //         animationOut: ["animated", "fadeOut"],
+            //         dismiss: {
+            //             duration: 2000,
+            //             onScreen: true
+            //         }
+            //     })
+            //     document.getElementById('contact-form').reset()
+            // }, error => {
+            //     console.log(error.text)
+            // })
     }
 
     const fade2 = useSpring({

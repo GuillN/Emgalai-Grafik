@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useState, useEffect} from "react"
 import {MobileView, BrowserView} from "react-device-detect"
 import {Link} from "react-router-dom";

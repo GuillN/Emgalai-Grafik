@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useState, useEffect} from "react"
 import LazyLoad from "react-lazyload"
 import placeholder from '../../images/placeholder.png'

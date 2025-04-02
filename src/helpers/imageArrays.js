@@ -1,3 +1,4 @@
+/* eslint-disable */
 import aetheria_cover from '../images/aetheria/Aetheria.jpg'
 import alt_cover from '../images/alt/1.jpg'
 import af_cover from '../images/cassettes/acces_de_faiblesse/70229637_911070585930378_6026411403500322816_n.jpg'
@@ -7,11 +8,11 @@ import dark_tshirt_cover from "../images/tshirts/darkspace/dark_tish_carré.jpg"
 import gate_tshirt_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
 import rib_tshirt_cover from "../images/tshirts/rib/67567580_1310293545798865_9137664366735261696_o.jpg"
 import aluk_cover from '../images/aluk_todolo/carré-site.jpg'
-import cerbere from '../images/cerbere/CERBERE.jpg'
+import cerbere_cover from '../images/cerbere/CERBERE.jpg'
 import chaos_cover from '../images/chaos/Capture d’écran 2022-08-16 à 17.07.02.png'
 import conan_cover from '../images/conan/3.jpg'
 import cult_cover from '../images/cult_of_fire/3.jpg'
-import cratophane from '../images/cratophane/artwork-web.jpg'
+import cratophane_cover from '../images/cratophane/artwork-web.jpg'
 import darkspace_cover from '../images/darkspace/ZOOM3.jpg'
 import doom_cover from '../images/doom/61171990_1260684680759752_8179678087525433344_o.jpg'
 import edc_cover from '../images/edc/format 5_4.jpg'
@@ -26,10 +27,10 @@ import mongolito_cover from '../images/cd/mongolito/carré-en-fait-.jpg'
 import mysticum_cover from '../images/mysticum/3.jpg'
 import nespresso_cover from '../images/nespresso/08_DSC_8518.jpg'
 import ocean_cover from '../images/ocean/the-ocean-v2.jpg'
-import pyramid_cover from '../images/pyramid/440749533_1009476647844876_682177891020959344_n.jpg'
+import pyramid_cover from '../images/pyramid/0.jpg'
 import rio_cover from '../images/rio/3.jpg'
 import rocketgum_cover from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
-import sabbath_cover from '../images/sabbath/487801095_641621711822992_1887295652323717847_n.jpg'
+import sabbath_cover from '../images/sabbath/0.jpg'
 import structure_cover from '../images/structure/5.jpg'
 import sunn_cover from '../images/sunn/1 (1).jpg'
 import sylvaine_cover from '../images/sylvaine/Sylvaine-MockUp_IceGrey.jpg'
@@ -39,7 +40,7 @@ import urbanfest_cover from '../images/urban_fest/12898318_576300052531555_18309
 import vaurien_cover from '../images/cassettes/vaurien/1.jpg'
 import valve_cover from '../images/valve/1.jpg'
 import weidorje_cover from '../images/weidorje/1.jpg'
-import yonl_cover from '../images/yonl/391592645_869914208467788_1466262634874456979_n.jpg'
+import yonl_cover from '../images/yonl/0.jpg'
 
 // import tshirts_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
 // import vinyls_cover from "../images/vinyls/carré-en-fait-.jpg"

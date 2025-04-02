@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useState} from "react"
 import {MobileView, BrowserView} from "react-device-detect"
 

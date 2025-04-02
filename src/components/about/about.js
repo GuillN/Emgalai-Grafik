@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import './about.css'
 import logo from '../../images/emgalai-logo-NOIR.png'

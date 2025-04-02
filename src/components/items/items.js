@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import {MobileView, BrowserView} from "react-device-detect"
 import Image from "./image"

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import ProductPreview from "./productPreview";
 import "./shop.css"

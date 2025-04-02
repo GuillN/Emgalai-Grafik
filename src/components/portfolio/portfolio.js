@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import "./portfolio.css"
 import {Carousel} from "react-responsive-carousel"

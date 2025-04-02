@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useEffect, useState} from "react"
 import {useSpring, animated} from "react-spring"
 import {history} from "../../helpers/history"

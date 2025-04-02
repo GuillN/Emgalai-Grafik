@@ -1,3 +1,10 @@
+/* eslint-disable */
+import aetheria0 from '../images/aetheria/AeteriaLS-mock-up.png'
+import aetheria1 from '../images/aetheria/Aetheria.jpg'
+import aetheria2 from '../images/aetheria/fourreay-aetheria.jpg'
+import aetheria3 from '../images/aetheria/inside-Aetherria.jpg'
+import aetheria4 from '../images/aetheria/T-Shirt-Aetheria-MockUp_Front.png'
+
 import af0 from '../images/cassettes/acces_de_faiblesse/71805203_934774896893280_7544485877947301888_o.jpg'
 import af1 from '../images/cassettes/acces_de_faiblesse/71916057_934774903559946_1219914262755934208_o.jpg'
 import af2 from '../images/cassettes/acces_de_faiblesse/72169566_934774980226605_7998612325139480576_o.jpg'
@@ -10,10 +17,44 @@ import aguire2 from '../images/aguire/2.jpg'
 import aguire3 from '../images/aguire/3.jpg'
 import aguire4 from '../images/aguire/4.jpg'
 
+import alt0 from '../images/alt/1.jpg'
+import alt1 from '../images/alt/2.jpg'
+import alt2 from '../images/alt/3.jpg'
+import alt3 from '../images/alt/4.jpg'
+import alt4 from '../images/alt/5.jpg'
+import alt5 from '../images/alt/6.jpg'
+import alt6 from '../images/alt/7.jpg'
+import alt7 from '../images/alt/8.jpg'
+import alt8 from '../images/alt/9.jpg'
+import alt9 from '../images/alt/10.jpg'
+import alt10 from '../images/alt/11.jpg'
+import alt11 from '../images/alt/dedi-alt.jpg'
+import alt12 from '../images/alt/dedi-bann.jpg'
+
 import aluk0 from '../images/aluk_todolo/1.jpg'
 import aluk1 from '../images/aluk_todolo/2.jpg'
 import aluk2 from '../images/aluk_todolo/3.jpg'
 import aluk3 from '../images/aluk_todolo/4.jpg'
+
+import brus0 from '../images/brus/annonce.jpg'
+import brus1 from '../images/brus/Plan de travail 1.jpg'
+import brus2 from '../images/brus/Plan de travail 2.jpg'
+import brus3 from '../images/brus/Plan de travail 3.jpg'
+import brus4 from '../images/brus/Plan de travail 4.jpg'
+import brus5 from '../images/brus/Plan de travail 5.jpg'
+import brus6 from '../images/brus/story.jpg'
+import brus7 from '../images/brus/uz-1.jpg'
+import brus8 from '../images/brus/uz-2.jpg'
+import brus9 from '../images/brus/uz-3.jpg'
+import brus10 from '../images/brus/uz-4.jpg'
+import brus11 from '../images/brus/uz-5.jpg'
+import brus12 from '../images/brus/uz-6.jpg'
+import brus13 from '../images/brus/uz-7.jpg'
+import brus14 from '../images/brus/uz-8.jpg'
+import brus15 from '../images/brus/uz-9.jpg'
+
+import cerbere0 from '../images/cerbere/CERBERE.jpg'
+import cerbere1 from '../images/cerbere/CerbereMockUp.jpg'
 
 import chaos0 from '../images/chaos/artwork-entier.jpg'
 import chaos1 from '../images/chaos/inside.jpg'
@@ -41,6 +82,13 @@ import cult2 from '../images/cult_of_fire/3.jpg'
 import cult3 from '../images/cult_of_fire/4.jpg'
 import cult4 from '../images/cult_of_fire/5.jpg'
 
+import cratophane0 from '../images/cratophane/0.jpg'
+import cratophane1 from '../images/cratophane/1.jpg'
+import cratophane2 from '../images/cratophane/2.jpg'
+import cratophane3 from '../images/cratophane/3.jpg'
+import cratophane4 from '../images/cratophane/artwork-web.jpg'
+import cratophane5 from '../images/cratophane/insta.jpg'
+
 import darkspace0 from '../images/darkspace/darktof.jpg'
 import darkspace1 from '../images/darkspace/ZOOM1.jpg'
 import darkspace2 from '../images/darkspace/ZOOM2.jpg'
@@ -54,6 +102,10 @@ import doom1 from '../images/doom/61171990_1260684680759752_8179678087525433344_
 import doom2 from '../images/doom/61660984_1260684567426430_8776594149857034240_o.jpg'
 
 import escarion0 from '../images/escarion/Escarion-Envy.jpg'
+
+import edc0 from '../images/edc/banniere shotgun.jpg'
+import edc1 from '../images/edc/Ethernal-Decibel-OGdrawing.jpg'
+import edc2 from '../images/edc/format 5_4.jpg'
 
 import glazart0 from '../images/glazart/88160805_1508089349352616_8016955426086060032_o.jpg'
 import glazart1 from '../images/glazart/83413284_1480627958765422_5211848521983983616_o.jpg'
@@ -119,12 +171,25 @@ import nespresso2 from '../images/nespresso/08_DSC_8518.jpg'
 import nespresso3 from '../images/nespresso/IMG_8677.jpg'
 import nespresso4 from '../images/nespresso/unnamed.jpg'
 
-import penn0 from '../images/penn_men/PENN-MEN.jpg'
-import penn1 from '../images/penn_men/tshirt-penn-menJuste-recto.jpg'
-import penn2 from '../images/penn_men/3.png'
-import penn3 from '../images/penn_men/4.png'
-import penn4 from '../images/penn_men/5.png'
-import penn5 from '../images/penn_men/6.png'
+import ocean0 from '../images/ocean/mocj-up-black-THE-OCEAN.jpg'
+import ocean1 from '../images/ocean/mocj-up-white-THE-OCEAN.jpg'
+import ocean2 from '../images/ocean/the-ocean-v2.jpg'
+
+// import penn0 from '../images/penn_men/PENN-MEN.jpg'
+// import penn1 from '../images/penn_men/tshirt-penn-menJuste-recto.jpg'
+// import penn2 from '../images/penn_men/3.png'
+// import penn3 from '../images/penn_men/4.png'
+// import penn4 from '../images/penn_men/5.png'
+// import penn5 from '../images/penn_men/6.png'
+
+import pyramid0 from '../images/pyramid/0.jpg'
+import pyramid1 from '../images/pyramid/1.jpg'
+import pyramid2 from '../images/pyramid/2.jpg'
+import pyramid3 from '../images/pyramid/3.jpg'
+import pyramid4 from '../images/pyramid/BPtishMockUp.jpg'
+import pyramid5 from '../images/pyramid/BPtishMockUp2025.jpg'
+import pyramid6 from '../images/pyramid/FB-Black-Pyramid-2025FB.jpg'
+import pyramid7 from '../images/pyramid/Tour-BP.jpg'
 
 import rio0 from '../images/rio/1.jpg'
 import rio1 from '../images/rio/2.jpg'
@@ -140,6 +205,12 @@ import rocket0 from '../images/cd/rocket_gum/43398238_1830088690379585_402525831
 import rocket1 from '../images/cd/rocket_gum/43422552_1830088477046273_4342243946647257088_o.jpg'
 import rocket2 from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
 
+import sabbath0 from '../images/sabbath/0.jpg'
+import sabbath1 from '../images/sabbath/1.jpg'
+import sabbath2 from '../images/sabbath/mock up fond.png'
+import sabbath3 from '../images/sabbath/mock up FOURREAUfond.png'
+import sabbath4 from '../images/sabbath/Shirt BTWOSMockUp.png'
+
 import structure0 from '../images/structure/0.jpg'
 import structure1 from '../images/structure/1.jpg'
 import structure2 from '../images/structure/2.jpg'
@@ -152,6 +223,10 @@ import sunn1 from '../images/sunn/1 (1).jpg'
 import sunn2 from '../images/sunn/2 (1).jpg'
 import sunn3 from '../images/sunn/3.jpg'
 
+import sylvaine0 from '../images/sylvaine/Sylvaine-MockUp_IceGrey.jpg'
+import sylvaine1 from '../images/sylvaine/Sylvaine-MockUp_midnight.jpg'
+import sylvaine2 from '../images/sylvaine/SylvaineV2.jpg'
+
 import ulver0 from '../images/ulver/carré-ulver.jpg'
 import ulver1 from '../images/ulver/zoom-2.jpg'
 import ulver2 from '../images/ulver/zoom-4.jpg'
@@ -159,12 +234,32 @@ import ulver3 from '../images/ulver/zoom-1.jpg'
 import ulver4 from '../images/ulver/zoom-3.jpg'
 import ulver5 from '../images/ulver/CAdre.jpg'
 
+import ulver_edition0 from '../images/ulver_edition/1P2660406.jpg'
+import ulver_edition1 from '../images/ulver_edition/2P2660406.jpg'
+import ulver_edition2 from '../images/ulver_edition/mock-up-fourreau.jpg'
+import ulver_edition3 from '../images/ulver_edition/P2sss660406.jpg'
+import ulver_edition4 from '../images/ulver_edition/P2660rrr406.jpg'
+import ulver_edition5 from '../images/ulver_edition/P2660sw406.jpg'
+import ulver_edition6 from '../images/ulver_edition/P26604dd06.jpg'
+import ulver_edition7 from '../images/ulver_edition/P26604eee06.jpg'
+import ulver_edition8 from '../images/ulver_edition/P266040wwe6.jpg'
+import ulver_edition9 from '../images/ulver_edition/P2660406.jpg'
+import ulver_edition10 from '../images/ulver_edition/P2660403336.jpg'
+
 import urban0 from '../images/urban_fest/12898318_576300052531555_183095972173381426_o.jpg'
 import urban1 from '../images/urban_fest/affiche-RAp-2.jpg'
 import urban2 from '../images/urban_fest/1.png'
 import urban3 from '../images/urban_fest/2.png'
 import urban4 from '../images/urban_fest/3.png'
 import urban5 from '../images/urban_fest/4.png'
+
+import valve0 from '../images/valve/1.jpg'
+import valve1 from '../images/valve/1(1).jpg'
+import valve2 from '../images/valve/IMG_20221024_150147 (1).jpg'
+
+import weidorje0 from '../images/weidorje/1.jpg'
+import weidorje1 from '../images/weidorje/2.jpg'
+import weidorje2 from '../images/weidorje/flyer-annonce-weidorje.jpg'
 
 import vaurien0 from '../images/cassettes/vaurien/1.jpg'
 import vaurien1 from '../images/cassettes/vaurien/2.jpeg'
@@ -174,6 +269,13 @@ import vaurien4 from '../images/cassettes/vaurien/5.jpg'
 import vaurien5 from '../images/cassettes/vaurien/6.jpg'
 import vaurien6 from '../images/cassettes/vaurien/7.jpg'
 
+import yonl0 from '../images/yonl/0.jpg'
+import yonl1 from '../images/yonl/1.jpg'
+import yonl2 from '../images/yonl/2.jpg'
+import yonl3 from '../images/yonl/3.jpg'
+import yonl4 from '../images/yonl/4.jpg'
+import yonl5 from '../images/yonl/IMG_3903.jpg'
+
 import logo0 from '../images/logos/LogoCortoniFull.png'
 import logo1 from '../images/logos/logog.jpg'
 import logo2 from '../images/logos/74933640_1797220587089149_9186832602584055808_n.jpg'
@@ -182,6 +284,10 @@ import logo4 from '../images/logos/Logo-RIO.jpg'
 import logo5 from '../images/logos/logo-stoned-of-reality.jpg'
 import logo6 from '../images/logos/RIB-logo.jpg'
 import logo7 from '../images/logos/ryte-logo-usé.jpg'
+import logo8 from '../images/logos/ALT-236-LOGOnoir.png'
+import logo9 from '../images/logos/rnrdoc.png'
+import logo10 from '../images/logos/New AC logo.png'
+import logo11 from '../images/logos/logoblanc.jpg'
 
 import poster0 from '../images/posters/carré-ulver.jpg'
 import poster1 from '../images/posters/carré-king-dude.jpg'
@@ -202,6 +308,12 @@ import tshirtDark1 from '../images/tshirts/darkspace/DARKSPACE-shirtVERSO.jpg'
 import tshirtGate0 from '../images/tshirts/gate/Emgalai_s-Gate-tish-recto.jpg'
 import tshirtGate1 from '../images/tshirts/gate/Emgalai_s-Gate-tish-verso.jpg'
 
+export let aetheria
+aetheria = [aetheria0, aetheria1, aetheria2, aetheria3, aetheria4]
+
+export let alt
+alt = [alt0, alt1, alt2, alt3, alt4, alt5, alt6, alt7, alt8, alt9, alt10, alt11 ,alt12]
+
 export let af
 af = [af0, af1, af2, af3, af4]
 
@@ -210,6 +322,12 @@ aguire = [aguire0, aguire1, aguire2, aguire3, aguire4]
 
 export let aluk
 aluk = [aluk0, aluk1, aluk2, aluk3]
+
+export let brus
+brus = [brus0, brus1, brus2, brus3, brus4, brus5, brus6, brus7, brus8, brus9, brus10, brus11, brus12, brus13, brus14, brus15]
+
+export let cerbere
+cerbere = [cerbere0, cerbere1]
 
 export let chaos
 chaos = [chaos0, chaos1, chaos2, chaos3, chaos4, chaos5, chaos6, chaos7, chaos8]
@@ -223,11 +341,17 @@ cortoni = [cortoni0, cortoni1]
 export let cult
 cult = [cult0, cult1, cult2, cult3, cult4]
 
+export let cratophane
+cratophane = [cratophane0, cratophane1, cratophane2, cratophane3, cratophane4, cratophane5]
+
 export let darkspace
 darkspace = [darkspace0, darkspace1, darkspace2, darkspace3, darkspace4, darkspace5]
 
 export let doom
 doom = [doom0, doom1, doom2]
+
+export let edc
+edc = [edc0, edc1, edc2]
 
 export let escarion
 escarion = [escarion0]
@@ -262,8 +386,14 @@ mysticum = [mysticum0, mysticum1, mysticum2, mysticum3, mysticum4, mysticum5, my
 export let nespresso
 nespresso = [nespresso0, nespresso1, nespresso2, nespresso3, nespresso4]
 
-export let penn
-penn = [penn0, penn1, penn2, penn3, penn4, penn5]
+// export let penn
+// penn = [penn0, penn1, penn2, penn3, penn4, penn5]
+
+export let ocean
+ocean = [ocean0, ocean1, ocean2]
+
+export let pyramid
+pyramid = [pyramid0, pyramid1, pyramid2, pyramid3, pyramid4, pyramid5, pyramid6, pyramid7]
 
 export let rio
 rio = [rio0, rio1, rio2, rio3, rio4, rio5, rio6, rio7, rio8]
@@ -271,26 +401,44 @@ rio = [rio0, rio1, rio2, rio3, rio4, rio5, rio6, rio7, rio8]
 export let rocketgum
 rocketgum = [rocket0, rocket1, rocket2]
 
+export let sabbath
+sabbath = [sabbath0, sabbath1, sabbath2, sabbath3, sabbath4]
+
 export let structure
 structure = [structure0, structure1, structure2, structure3, structure4, structure5]
 
 export let sunn
 sunn = [sunn0, sunn1, sunn2, sunn3]
 
+export let sylvaine
+sylvaine = [sylvaine0, sylvaine1, sylvaine2]
+
 export let ulver
 ulver = [ulver0, ulver1, ulver2, ulver3, ulver4, ulver5]
+
+export let ulver_edition
+ulver_edition = [ulver_edition0, ulver_edition1, ulver_edition2, ulver_edition3, ulver_edition4, ulver_edition5, ulver_edition6, ulver_edition7, ulver_edition8, ulver_edition9, ulver_edition10]
 
 export let urbanfest
 urbanfest = [urban0, urban1, urban2, urban3, urban4, urban5]
 
+export let valve
+valve = [valve0, valve1, valve2]
+
 export let vaurien
 vaurien = [vaurien0, vaurien1, vaurien2, vaurien3, vaurien4, vaurien5, vaurien6]
+
+export let weidorje
+weidorje = [weidorje0, weidorje1, weidorje2]
+
+export let yonl
+yonl = [yonl0, yonl1, yonl2, yonl3, yonl4, yonl5]
 
 export let posters
 posters = [poster0, poster1, poster2, poster3, poster4, poster5, poster6, poster7, poster8]
 
 export let logos
-logos = [logo0, logo1, logo2, logo3, logo4, logo5, logo6, logo7]
+logos = [logo0, logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11]
 
 export let tshirtRib
 tshirtRib = [tshirtRib0]

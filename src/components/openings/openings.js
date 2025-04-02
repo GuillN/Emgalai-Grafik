@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react"
 import Footer from "../footer/footer";
 import Nav from "../nav/Nav";

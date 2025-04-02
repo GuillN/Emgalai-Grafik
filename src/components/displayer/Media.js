@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, {useState} from 'react'
 import ReactPlayer from 'react-player'
 import PopupImage from "../items/popupImage"

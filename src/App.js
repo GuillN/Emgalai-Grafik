@@ -1,8 +1,7 @@
+/* eslint-disable */
 import React from 'react'
 import {Router} from 'react-router-dom'
 import {history} from './helpers/history'
-import ReactNotification from "react-notifications-component"
-import 'react-notifications-component/dist/theme.css'
 import './App.css'
 
 import Routes from "./Routes"

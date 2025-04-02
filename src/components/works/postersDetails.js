@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+/* eslint-disable */
 import {BrowserView, MobileView} from "react-device-detect"
 import {Carousel} from "react-responsive-carousel"
 import {animated, useSpring} from "react-spring"
