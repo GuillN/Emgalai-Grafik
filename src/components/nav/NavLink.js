@@ -1,7 +1,7 @@
 /* eslint-disable */
-import React, {useState} from "react"
-import {Link} from "react-router-dom";
-import {useSpring, animated} from 'react-spring';
+import React, { useState } from "react"
+import { Link } from "react-router-dom";
+import { useSpring, animated } from 'react-spring';
 
 
 const NavLink = props => {
@@ -14,12 +14,18 @@ const NavLink = props => {
     }
 
     const fade = useSpring({
-        from: {opacity: 0,}, opacity: 1
+        from: { opacity: 0, }, opacity: 1
     })
 
-    return <animated.div className="nav-link-container" style={fade}>
-        <Link to={`${url}`} style={color} className="nav-link">{text.toUpperCase()}</Link>
-    </animated.div>
+    return text == 'shop' ?
+        <animated.div className="nav-link-container" style={fade}>
+            <a style={color} target="_blank" rel="noopener noreferrer" href="https://emgalaishop.bigcartel.com/"
+            className="nav-link">SHOP</a>
+        </animated.div>
+        :
+        <animated.div className="nav-link-container" style={fade}>
+            <Link to={`${url}`} style={color} className="nav-link">{text.toUpperCase()}</Link>
+        </animated.div>
 }
 
 export default NavLink

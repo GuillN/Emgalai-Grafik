@@ -11,7 +11,7 @@ import {
   merchArray,
   packagingArray,
   visuIdArray,
-  //posterArray,
+  posterArray,
   logoArray,
   tshirtArray,
   cassetteArray,
@@ -28,7 +28,7 @@ import Nav from "../nav/Nav";
 const Displayer = props => {
 
     const [id] = useState(props.match.params.id)
-    const [pathName] = useState(history.location.pathname.split('/')[history.location.pathname.split('/').length - 2])
+    const [pathName] = useState(history.location.pathname.split('/')[1])
     const [client, setClient] = useState({})
     const [images, setImages] = useState([])
     const [videos, setVideos] = useState([])
@@ -73,12 +73,12 @@ const Displayer = props => {
             setVideos(visuIdArray[id].videos)
             setImageIndex(visuIdArray[id].imageIndex)
             break
-          // case 'posters':
-          //   setClient(posterArray[id])
-          //   setImages(posterArray[id].images)
-          //   setVideos(posterArray[id].videos)
-          //   setImageIndex(posterArray[id].imageIndex)
-          //   break
+           case 'posters':
+             setClient(posterArray[id])
+             setImages(posterArray[id].images)
+             setVideos(posterArray[id].videos)
+             setImageIndex(posterArray[id].imageIndex)
+             break
           // case 'works':
           //     setClient(workArray[id])
           //     setImages(workArray[id].images)
@@ -141,7 +141,7 @@ const Displayer = props => {
             default:
                 break
         }
-    }, [id, pathName])
+    }, [id, pathName, window.location.href])
 
     const fade = useSpring({
         from: {opacity: 0,}, opacity: 1,

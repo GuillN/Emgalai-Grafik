@@ -10,6 +10,7 @@ import logo1White from "../../images/logo-whito.svg";
 import logo2Black from "../../images/emgalaiprint SIMPLE logo.svg";
 import logo2White from "../../images/emgalaiprint SIMPLE logoBLANC.png";
 import NavLink from "./NavLink";
+import {useSpring, animated} from "react-spring"
 // import NavDropLink from "./NavDropLink";
 import NavDropLinkMobile from "./NavDropLinkMobile";
 
@@ -25,6 +26,9 @@ const Nav = () => {
         setLogo(isPrint ? isWhite ? logo2White : logo2Black : isWhite ? logo1White : logo1Black)
     }, [isPrint, isWhite])
 
+    const fade = useSpring({
+        from: {opacity: 0,}, opacity: 1
+    })
 
     return <div>
 
@@ -70,7 +74,11 @@ const Nav = () => {
 
                 {isPrint ?
                     <></> :
-                    <NavLink isWhite={isWhite} text={'shop'}/>
+                    <NavLink isWhite={isWhite} text={'shop'} url={"https://emgalaishop.bigcartel.com/"}/>
+                    // <animated.div className="nav-link-container" style={fade}>
+                    //     <a target="_blank" rel="noopener noreferrer" href="https://emgalaishop.bigcartel.com/"
+                    //         className="nav-link">shop</a>
+                    //    </animated.div>
                 }
             </section>
         </BrowserView>
@@ -118,7 +126,9 @@ const Nav = () => {
 
                 {isPrint ?
                     <></> :
-                    <NavDropLinkMobile isWhite={isWhite} text={'shop'}/>
+                    // <NavDropLinkMobile isWhite={isWhite} text={'shop'}/>
+                    <a target="_blank" rel="noopener noreferrer" href="https://emgalaishop.bigcartel.com/"
+                       className="home-link">SHOP</a>
                 }
             </section>
         </MobileView>

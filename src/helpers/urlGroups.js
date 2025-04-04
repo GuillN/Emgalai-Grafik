@@ -1,8 +1,7 @@
 /* eslint-disable */
 export const whiteUrls = [
     "/portfolio",
-    "/print",
-    "/posters"
+    "/print"
 ]
 
 export const dropUrls = []

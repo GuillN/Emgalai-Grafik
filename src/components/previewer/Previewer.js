@@ -8,7 +8,7 @@ import {
     merchArray,
     packagingArray,
     visuIdArray,
-    // posterArray,
+    posterArray,
     tshirtArray,
     cassetteArray,
     vinylArray,
@@ -28,6 +28,7 @@ const Previewer = props => {
     const [isPrint, setIsPrint] = useState(false)
 
     useEffect(() => {
+        // console.log(this.props.history.location.pathname)
         const path = history.location.pathname;
         switch (path) {
             case '/editions':
@@ -60,11 +61,11 @@ const Previewer = props => {
                 setArray(visuIdArray)
                 setIsPrint(false)
                 break
-            // case '/posters':
-            //     setUrl('posters')
-            //     setArray(posterArray)
-            //     setIsPrint(false)
-            //     break
+             case '/posters':
+                 setUrl('posters')
+                 setArray(posterArray)
+                 setIsPrint(false)
+                 break
             /*case '/works':
                 setUrl('works')
                 setArray(workArray)
@@ -103,18 +104,17 @@ const Previewer = props => {
                 setArray(othersArray)
                 setIsPrint(true)
                 break
-            
-
             default:
                 break
         }
-    }, [array, isPrint, url])
+    }, [array, isPrint, url, window.location.href])
 
     const previews = Object.keys(array).map((previewKey, index) => {
         let destination
         //Redirects to tshirts when on prints/0
         //if (url === 'prints' && index === 0) destination = '/tshirts'
-        destination = `/${url}/${index}`
+        if (url === 'music') destination = array[previewKey].title.toLowerCase()
+        else destination = `/${url}/${index}`
         const preview = array[previewKey]
         return <Link to={destination}>
             <Items cover={preview.cover} alt={`${preview.title}_img`} title={preview.title}/>
