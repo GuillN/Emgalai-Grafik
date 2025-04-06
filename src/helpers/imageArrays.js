@@ -60,6 +60,8 @@ import rocketgum_cover from '../images/cd/rocket_gum/43436560_1830087720379682_7
 import mongolito_cover from '../images/cd/mongolito/carré-en-fait-.jpg'
 // WORKSHOP OTHER COVERS
 import nespresso_cover from '../images/workshop_others/nespresso/08_DSC_8518.jpg'
+import frozen_cover from '../images/workshop_others/frozen/MOCK-UP-PIONS.jpg'
+import ladlo_cover from '../images/workshop_others/ladlo/2.jpeg'
 //  import tshirts_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
 //  import vinyls_cover from "../images/vinyls/carré-en-fait-.jpg"
 //  import cassettes_cover from "../images/cassettes/70229637_911070585930378_6026411403500322816_n.jpg"
@@ -113,6 +115,8 @@ import {
     tshirtRib,
     urbanfest,
     yonl,
+    frozen,
+    ladlo,
 } from './images'
 import { logos } from './images'
 
@@ -807,7 +811,33 @@ export const othersArray = [
         videoIndex: [],
         squareIndex: [],
         tinyIndex: []
-    }
+    },
+    {
+        images: frozen,
+        cover: frozen_cover,
+        title: 'Frozen Records',
+        text: "",
+        medIndex: [],
+        smallIndex: [],
+        videos: [],
+        imageIndex: [0, 1],
+        videoIndex: [],
+        squareIndex: [],
+        tinyIndex: []
+    },
+    {
+        images: ladlo,
+        cover: ladlo_cover,
+        title: 'LADLO',
+        text: "",
+        medIndex: [],
+        smallIndex: [],
+        videos: [],
+        imageIndex: [0, 1, 2, 3, 4],
+        videoIndex: [],
+        squareIndex: [],
+        tinyIndex: []
+    },
 ]
 
 

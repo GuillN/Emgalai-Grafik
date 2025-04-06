@@ -325,6 +325,15 @@ import nespresso2 from '../images/workshop_others/nespresso/08_DSC_8518.jpg'
 import nespresso3 from '../images/workshop_others/nespresso/IMG_8677.jpg'
 import nespresso4 from '../images//workshop_others/nespresso/272660272_1080747219371724_5948941520687875343_n.jpg'
 
+import frozen0 from '../images/workshop_others/frozen/MOCK-UP-JEU.jpg'
+import frozen1 from '../images/workshop_others/frozen/MOCK-UP-PIONS.jpg'
+
+import ladlo0 from '../images/workshop_others/ladlo/2.jpeg'
+import ladlo1 from '../images/workshop_others/ladlo/3.jpeg'
+import ladlo2 from '../images/workshop_others/ladlo/4.jpg'
+import ladlo3 from '../images/workshop_others/ladlo/CH_BOX_800x800-min-2.jpeg'
+import ladlo4 from '../images/workshop_others/ladlo/CH_BOXopen_800x800-min-2.jpeg'
+
 export let aetheria
 aetheria = [aetheria0, aetheria1, aetheria2, aetheria3, aetheria4]
 
@@ -412,9 +421,6 @@ mysticum = [mysticum0, mysticum1, mysticum2, mysticum3, mysticum4, mysticum5, my
 export let nespresso
 nespresso = [nespresso0, nespresso1, nespresso2, nespresso3, nespresso4]
 
-// export let penn
-// penn = [penn0, penn1, penn2, penn3, penn4, penn5]
-
 export let ocean
 ocean = [ocean0, ocean1, ocean2]
 
@@ -466,11 +472,10 @@ welcomex = [welcomex0, welcomex1, welcomex2, welcomex3, welcomex4, welcomex5, we
 export let yonl
 yonl = [yonl0, yonl1, yonl2, yonl3, yonl4, yonl5]
 
-// export let posters
-// posters = [poster0, poster1, poster2, poster3, poster4, poster5, poster6, poster7, poster8]
-
 export let logos
 logos = [logo0, logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11]
+
+// WORKSHOP
 
 export let tshirtRib
 tshirtRib = [tshirtRib0]
@@ -480,3 +485,9 @@ tshirtDark = [tshirtDark0, tshirtDark1]
 
 export let tshirtGate
 tshirtGate = [tshirtGate0, tshirtGate1]
+
+export let frozen
+frozen = [frozen0, frozen1]
+
+export let ladlo
+ladlo = [ladlo0, ladlo1, ladlo2, ladlo3, ladlo4]
