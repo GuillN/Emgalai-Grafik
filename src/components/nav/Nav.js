@@ -53,32 +53,36 @@ const Nav = () => {
                 }
 
                 {isPrint ?
-                    <NavLink isWhite={isWhite} text={'prints'}/> :
+                    <NavLink isWhite={isWhite} text={'workshops'} url={'/print/workshops'}/> :
                     <NavLink isWhite={isWhite} text={'editions'} url={'/editions'}/>
                 }
 
                 {isPrint ?
-                    <></> :
+                    <NavLink isWhite={isWhite} text={'tshirts'} url={'/print/tshirts'}/>  :
                     <NavLink isWhite={isWhite} text={'music'} url={'/music'}/>
                 }
 
                 {isPrint ?
-                    <></> :
+                    <NavLink isWhite={isWhite} text={'LP'} url={'/print/lp'}/>  :
                     <NavLink isWhite={isWhite} text={'gig posters'} url={'/posters'}/>
                 }
 
                 {isPrint ?
-                    <></> :
+                    <NavLink isWhite={isWhite} text={'cd'} url={'/print/cd'}/>  :
                     <NavLink isWhite={isWhite} text={'logos'} url={'/logos'}/>
                 }
 
                 {isPrint ?
-                    <></> :
+                    <NavLink isWhite={isWhite} text={'tapes'} url={'/print/tapes'}/>  :
                     <NavLink isWhite={isWhite} text={'shop'} url={"https://emgalaishop.bigcartel.com/"}/>
                     // <animated.div className="nav-link-container" style={fade}>
                     //     <a target="_blank" rel="noopener noreferrer" href="https://emgalaishop.bigcartel.com/"
                     //         className="nav-link">shop</a>
                     //    </animated.div>
+                }
+                {isPrint ?
+                    <NavLink isWhite={isWhite} text={'other'} url={'/print/other'}/>  :
+                    <></>
                 }
             </section>
         </BrowserView>

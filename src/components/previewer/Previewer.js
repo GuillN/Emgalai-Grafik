@@ -10,8 +10,8 @@ import {
     visuIdArray,
     posterArray,
     tshirtArray,
-    cassetteArray,
-    vinylArray,
+    tapeArray,
+    lpArray,
     cdArray,
     othersArray} from "../../helpers/imageArrays"
 import Items from "../items/items";
@@ -30,6 +30,8 @@ const Previewer = props => {
     useEffect(() => {
         // console.log(this.props.history.location.pathname)
         const path = history.location.pathname;
+        console.log('[Previewer] path ' + path)
+        console.log('[Previewer] location ' + window.location.href)
         switch (path) {
             case '/editions':
                 setUrl('editions')
@@ -84,9 +86,9 @@ const Previewer = props => {
                 setArray(tshirtArray)
                 setIsPrint(true)
                 break
-            case '/print/vinyls':
-                setUrl('print/vinyls')
-                setArray(vinylArray)
+            case '/print/lp':
+                setUrl('print/lp')
+                setArray(lpArray)
                 setIsPrint(true)
                 break
             case '/print/cd':
@@ -94,13 +96,13 @@ const Previewer = props => {
                 setArray(cdArray)
                 setIsPrint(true)
                 break
-            case '/print/cassettes':
-                setUrl('print/cassettes')
-                setArray(cassetteArray)
+            case '/print/tapes':
+                setUrl('print/tapes')
+                setArray(tapeArray)
                 setIsPrint(true)
                 break
-            case '/print/divers':
-                setUrl('print/divers')
+            case '/print/other':
+                setUrl('print/other')
                 setArray(othersArray)
                 setIsPrint(true)
                 break

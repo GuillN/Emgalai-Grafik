@@ -9,7 +9,7 @@ import Contact from "./components/contact/contact";
 import Previewer from "./components/previewer/Previewer";
 import Displayer from "./components/displayer/Displayer";
 import PostersDetails from "./components/works/postersDetails";
-import Shop from "./components/shop/shop";
+// import Shop from "./components/shop/shop";
 import Devis from "./components/devis/devis";
 
 export default () => {
@@ -41,20 +41,27 @@ export default () => {
             {/* <Route path="/logos/:id" exact component={Displayer}/> */}
 
             {/* <Route path="/music/:id" component={Displayer}/> */}
-            <Route path="/shop" component={Shop}/>
+            {/* <Route path="/shop" component={Shop}/> */}
+
+            {/* TODO remove /print */}
+
             <Route path="/print/devis" component={Devis}/>
+            <Route key="wrks" path="/print/workshops" exact component={Previewer}/>
+            <Route path="/print/workshops/:id" component={Displayer}/>
             <Route key="tsh" path="/print/tshirts" exact component={Previewer}/>
             <Route path="/print/tshirts/:id" component={Displayer}/>
-            <Route key="vyl" path="/print/vinyls" exact component={Previewer}/>
-            <Route path="/print/vinyls/:id" component={Displayer}/>
+            {/* <Route key="vyl" path="/print/vinyls" exact component={Previewer}/> */}
+            {/* <Route path="/print/vinyls/:id" component={Displayer}/> */}
             <Route key="cd" path="/print/cd" exact component={Previewer}/>
             <Route path="/print/cd/:id" component={Displayer}/>
-            <Route key="k7" path="/print/cassettes" exact component={Previewer}/>
-            <Route path="/print/cassettes/:id" component={Displayer}/>
-            <Route key="pst" path="/print/posters" exact component={Previewer}/>
-            <Route path="/print/posters/:id" component={Displayer}/>
-            <Route key="misc" path="/print/divers" exact component={Previewer}/>
-            <Route key="misc" path="/print/divers/:id" component={Displayer}/>
+            <Route key="k7" path="/print/tapes" exact component={Previewer}/>
+            <Route path="/print/tapes/:id" component={Displayer}/>
+            <Route key="lp" path="/print/lp" exact component={Previewer}/>
+            <Route path="/print/lp/:id" component={Displayer}/>
+            {/* <Route key="pst" path="/print/posters" exact component={Previewer}/> */}
+            {/* <Route path="/print/posters/:id" component={Displayer}/> */}
+            <Route key="misc" path="/print/other" exact component={Previewer}/>
+            <Route key="misc" path="/print/other/:id" component={Displayer}/>
         </Switch>
     </div>
 }

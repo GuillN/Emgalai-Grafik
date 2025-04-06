@@ -1,13 +1,11 @@
 /* eslint-disable */
+
+// PORTFOLIO ARTIST COVERS
 import aetheria_cover from '../images/aetheria/Aetheria.jpg'
 import alt_cover from '../images/alt/1.jpg'
-import af_cover from '../images/cassettes/acces_de_faiblesse/70229637_911070585930378_6026411403500322816_n.jpg'
 import aguire_cover from '../images/aguire/artwork.jpg'
 import alcest_cover from '../images/alcest/1.jpg'
 import brus_cover from '../images/brus/uz-1.jpg'
-import dark_tshirt_cover from "../images/tshirts/darkspace/dark_tish_carré.jpg"
-import gate_tshirt_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
-import rib_tshirt_cover from "../images/tshirts/rib/67567580_1310293545798865_9137664366735261696_o.jpg"
 import aluk_cover from '../images/aluk_todolo/carré-site.jpg'
 import cerbere_cover from '../images/cerbere/CERBERE.jpg'
 import chaos_cover from '../images/chaos/Capture d’écran 2022-08-16 à 17.07.02.png'
@@ -26,13 +24,10 @@ import imperial_cover from '../images/imperial/IT-facebook.jpg'
 import king_cover from '../images/king_dude/2.jpg'
 import lsm_cover from '../images/lsm/artworkLSM.jpg'
 import metalorgie_cover from '../images/metalorgie/carré.jpg'
-import mongolito_cover from '../images/cd/mongolito/carré-en-fait-.jpg'
 import mysticum_cover from '../images/mysticum/3.jpg'
-import nespresso_cover from '../images/nespresso/08_DSC_8518.jpg'
 import ocean_cover from '../images/ocean/the-ocean-v2.jpg'
 import pyramid_cover from '../images/pyramid/0.jpg'
 import rio_cover from '../images/rio/3.jpg'
-import rocketgum_cover from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
 import sabbath_cover from '../images/sabbath/1.jpg'
 import stortreng_cover from '../images/stortreng/1.jpg'
 import structure_cover from '../images/structure/5.jpg'
@@ -41,17 +36,30 @@ import sylvaine_cover from '../images/sylvaine/Sylvaine-MockUp_IceGrey.jpg'
 import ulver_cover from '../images/ulver/zoom-3.jpg'
 import ulver_edition_cover from '../images/ulver_edition/mock-up-fourreau.jpg'
 import urbanfest_cover from '../images/urban_fest/12898318_576300052531555_183095972173381426_o.jpg'
-import vaurien_cover from '../images/cassettes/vaurien/1.jpg'
 import valve_cover from '../images/valve/1.jpg'
 import weidorje_cover from '../images/weidorje/1.jpg'
 import welcomex_cover from '../images/welcomex/1.jpg'
 import yonl_cover from '../images/yonl/0.jpg'
 
+// PORTFOLIO MUSIC COVERS
 import albums_cover from '../images/aetheria/Aetheria.jpg'
 import packaging_cover from '../images/alt/1.jpg'
 import merch_cover from '../images/aluk_todolo/carré-site.jpg'
 import identity_cover from '../images/hifi/hifi-store-totebag-old.jpg'
 
+// WORKSHOP TAPES COVERS
+import af_cover from '../images/cassettes/acces_de_faiblesse/70229637_911070585930378_6026411403500322816_n.jpg'
+import vaurien_cover from '../images/cassettes/vaurien/1.jpg'
+// WORKSHOP TSHIRT COVERS
+import dark_tshirt_cover from "../images/tshirts/darkspace/dark_tish_carré.jpg"
+import gate_tshirt_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
+import rib_tshirt_cover from "../images/tshirts/rib/67567580_1310293545798865_9137664366735261696_o.jpg"
+// WORKSHOP CD COVERS
+import rocketgum_cover from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
+// WORKSHOP LP COVERS
+import mongolito_cover from '../images/cd/mongolito/carré-en-fait-.jpg'
+// WORKSHOP OTHER COVERS
+import nespresso_cover from '../images/workshop_others/nespresso/08_DSC_8518.jpg'
 //  import tshirts_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
 //  import vinyls_cover from "../images/vinyls/carré-en-fait-.jpg"
 //  import cassettes_cover from "../images/cassettes/70229637_911070585930378_6026411403500322816_n.jpg"
@@ -573,8 +581,6 @@ export const visuIdArray = [
         squareIndex: [1, 2],
         tinyIndex: []
     },
-
-
     {
         images: goblin,
         cover: goblin_cover,
@@ -682,6 +688,12 @@ export const logoArray = {
     videos: []
 }
 
+// WORKSHOP ARRAYS
+
+export const workshopArray = [
+
+]
+
 export const tshirtArray = [
     {
         images: tshirtDark,
@@ -721,7 +733,7 @@ export const tshirtArray = [
     }
 ]
 
-export const vinylArray = [
+export const lpArray = [
     {
         images: mongolito,
         cover: mongolito_cover,
@@ -753,7 +765,7 @@ export const cdArray = [
     }
 ]
 
-export const cassetteArray = [
+export const tapeArray = [
     {
         images: af,
         cover: af_cover,
@@ -800,21 +812,21 @@ export const othersArray = [
 
 
 
- export const workArray = [
+//  export const workArray = [
 
      
      
-     {
-         images: urbanfest,
-         cover: urbanfest_cover,
-         title: 'Urban Fest',
-         text: "",
-         medIndex: [],
-         smallIndex: [],
-         videos: [],
-         imageIndex: [0, 1, 2, 3, 4, 5],
-         videoIndex: [],
-         squareIndex: [],
-         tinyIndex: []
-     }
- ]
+//      {
+//          images: urbanfest,
+//          cover: urbanfest_cover,
+//          title: 'Urban Fest',
+//          text: "",
+//          medIndex: [],
+//          smallIndex: [],
+//          videos: [],
+//          imageIndex: [0, 1, 2, 3, 4, 5],
+//          videoIndex: [],
+//          squareIndex: [],
+//          tinyIndex: []
+//      }
+//  ]

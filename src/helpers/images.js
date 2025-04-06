@@ -1,15 +1,11 @@
 /* eslint-disable */
+
+// PORTFOLIO IMAGES
 import aetheria0 from '../images/aetheria/AeteriaLS-mock-up.png'
 import aetheria1 from '../images/aetheria/Aetheria.jpg'
 import aetheria2 from '../images/aetheria/fourreay-aetheria.jpg'
 import aetheria3 from '../images/aetheria/inside-Aetherria.jpg'
 import aetheria4 from '../images/aetheria/T-Shirt-Aetheria-MockUp_Front.png'
-
-import af0 from '../images/cassettes/acces_de_faiblesse/71805203_934774896893280_7544485877947301888_o.jpg'
-import af1 from '../images/cassettes/acces_de_faiblesse/71916057_934774903559946_1219914262755934208_o.jpg'
-import af2 from '../images/cassettes/acces_de_faiblesse/72169566_934774980226605_7998612325139480576_o.jpg'
-import af3 from '../images/cassettes/acces_de_faiblesse/72278993_939565739747529_2610847805341696000_o.jpg'
-import af4 from '../images/cassettes/acces_de_faiblesse/72996266_939565966414173_8140139460412047360_o.jpg'
 
 import aguire0 from '../images/aguire/artwork.jpg'
 import aguire1 from '../images/aguire/1.jpg'
@@ -79,12 +75,6 @@ import conan5 from '../images/conan/6.jpg'
 import cortoni0 from '../images/cortoni/CORELIAN.jpg'
 import cortoni1 from '../images/cortoni/LogoVectorCortoniTRIPLE.jpg'
 
-import cult0 from '../images/cult_of_fire/1.jpg'
-import cult1 from '../images/cult_of_fire/2.jpg'
-import cult2 from '../images/cult_of_fire/3.jpg'
-import cult3 from '../images/cult_of_fire/4.jpg'
-import cult4 from '../images/cult_of_fire/5.jpg'
-
 import cratophane0 from '../images/cratophane/0.jpg'
 import cratophane1 from '../images/cratophane/1.jpg'
 import cratophane2 from '../images/cratophane/2.jpg'
@@ -92,23 +82,28 @@ import cratophane3 from '../images/cratophane/3.jpg'
 import cratophane4 from '../images/cratophane/artwork-web.jpg'
 import cratophane5 from '../images/cratophane/insta.jpg'
 
+import cult0 from '../images/cult_of_fire/1.jpg'
+import cult1 from '../images/cult_of_fire/2.jpg'
+import cult2 from '../images/cult_of_fire/3.jpg'
+import cult3 from '../images/cult_of_fire/4.jpg'
+import cult4 from '../images/cult_of_fire/5.jpg'
+
 import darkspace0 from '../images/darkspace/darktof.jpg'
 import darkspace1 from '../images/darkspace/ZOOM1.jpg'
 import darkspace2 from '../images/darkspace/ZOOM2.jpg'
 import darkspace3 from '../images/darkspace/ZOOM3.jpg'
-import darkspace4 from '../images/darkspace/IMG_2800.JPG'
+import darkspace4 from '../images/darkspace/IMG_2800.jpg'
 import darkspace5 from '../images/darkspace/IMG_20180505_173015 (1).jpg'
-// import darkspace6 from '../images/darkspace/profile-picture.jpg'
 
 import doom0 from '../images/doom/61698623_1260684734093080_8789890969173491712_o.jpg'
 import doom1 from '../images/doom/61171990_1260684680759752_8179678087525433344_o.jpg'
 import doom2 from '../images/doom/61660984_1260684567426430_8776594149857034240_o.jpg'
 
-import escarion0 from '../images/escarion/Escarion-Envy.jpg'
-
 import edc0 from '../images/edc/banniere shotgun.jpg'
 import edc1 from '../images/edc/Ethernal-Decibel-OGdrawing.jpg'
 import edc2 from '../images/edc/format 5_4.jpg'
+
+import escarion0 from '../images/escarion/Escarion-Envy.jpg'
 
 import glazart0 from '../images/glazart/88160805_1508089349352616_8016955426086060032_o.jpg'
 import glazart1 from '../images/glazart/83413284_1480627958765422_5211848521983983616_o.jpg'
@@ -172,22 +167,9 @@ import mysticum7 from '../images/mysticum/1.jpg'
 import mysticum8 from '../images/mysticum/2.jpg'
 import mysticum9 from '../images/mysticum/3.jpg'
 
-import nespresso0 from '../images/nespresso/NESPRESSO312.jpg'
-import nespresso1 from '../images/nespresso/05_DSC_7320.jpg'
-import nespresso2 from '../images/nespresso/08_DSC_8518.jpg'
-import nespresso3 from '../images/nespresso/IMG_8677.jpg'
-import nespresso4 from '../images/nespresso/unnamed.jpg'
-
 import ocean0 from '../images/ocean/mocj-up-black-THE-OCEAN.jpg'
 import ocean1 from '../images/ocean/mocj-up-white-THE-OCEAN.jpg'
 import ocean2 from '../images/ocean/the-ocean-v2.jpg'
-
-// import penn0 from '../images/penn_men/PENN-MEN.jpg'
-// import penn1 from '../images/penn_men/tshirt-penn-menJuste-recto.jpg'
-// import penn2 from '../images/penn_men/3.png'
-// import penn3 from '../images/penn_men/4.png'
-// import penn4 from '../images/penn_men/5.png'
-// import penn5 from '../images/penn_men/6.png'
 
 import pyramid0 from '../images/pyramid/0.jpg'
 import pyramid1 from '../images/pyramid/1.jpg'
@@ -207,10 +189,6 @@ import rio5 from '../images/rio/92ad4232222117.567435032088c.jpg'
 import rio6 from '../images/rio/e6d84732222117.567435031f776.jpg'
 import rio7 from '../images/rio/e79c3d32222117.5674350322a81.jpg'
 import rio8 from '../images/rio/febb3132222117.5674350323a70.jpg'
-
-import rocket0 from '../images/cd/rocket_gum/43398238_1830088690379585_4025258317772226560_o.jpg'
-import rocket1 from '../images/cd/rocket_gum/43422552_1830088477046273_4342243946647257088_o.jpg'
-import rocket2 from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
 
 import sabbath0 from '../images/sabbath/1.jpg'
 import sabbath1 from '../images/sabbath/e7fa63c7-59e5-4d57-8cc9-d955357e07fd.jpg'
@@ -272,14 +250,6 @@ import weidorje0 from '../images/weidorje/1.jpg'
 import weidorje1 from '../images/weidorje/2.jpg'
 import weidorje2 from '../images/weidorje/flyer-annonce-weidorje.jpg'
 
-import vaurien0 from '../images/cassettes/vaurien/1.jpg'
-import vaurien1 from '../images/cassettes/vaurien/2.jpeg'
-import vaurien2 from '../images/cassettes/vaurien/3.jpeg'
-import vaurien3 from '../images/cassettes/vaurien/4.jpg'
-import vaurien4 from '../images/cassettes/vaurien/5.jpg'
-import vaurien5 from '../images/cassettes/vaurien/6.jpg'
-import vaurien6 from '../images/cassettes/vaurien/7.jpg'
-
 import welcomex0 from '../images/welcomex/1.jpg'
 import welcomex1 from '../images/welcomex/2.LLP.jpg'
 import welcomex2 from '../images/welcomex/4.LGPE.jpg'
@@ -308,17 +278,18 @@ import logo9 from '../images/logos/rnrdoc.png'
 import logo10 from '../images/logos/New AC logo.png'
 import logo11 from '../images/logos/logoblanc.jpg'
 
-import poster0 from '../images/posters/carré-ulver.jpg'
-import poster1 from '../images/posters/carré-king-dude.jpg'
-import poster2 from '../images/posters/darktof.jpg'
-import poster3 from '../images/posters/carré-goblin.jpg'
-import poster4 from '../images/posters/posterconaninsta.jpg'
-import poster5 from '../images/posters/bongripper carré.jpg'
-import poster6 from '../images/posters/carré-aluk-poster.jpg'
-import poster7 from '../images/posters/carréinsta.jpg'
-import poster8 from '../images/posters/Untitled-1.jpg'
+// import poster0 from '../images/posters/carré-ulver.jpg'
+// import poster1 from '../images/posters/carré-king-dude.jpg'
+// import poster2 from '../images/posters/darktof.jpg'
+// import poster3 from '../images/posters/carré-goblin.jpg'
+// import poster4 from '../images/posters/posterconaninsta.jpg'
+// import poster5 from '../images/posters/bongripper carré.jpg'
+// import poster6 from '../images/posters/carré-aluk-poster.jpg'
+// import poster7 from '../images/posters/carréinsta.jpg'
+// import poster8 from '../images/posters/Untitled-1.jpg'
 // import poster9 from '../images/posters/1.jpg'
 
+// WORKSHOP TSHIRTS
 import tshirtRib0 from '../images/tshirts/rib/67567580_1310293545798865_9137664366735261696_o.jpg'
 
 import tshirtDark0 from '../images/tshirts/darkspace/DARKSPACE-shirt.jpg'
@@ -326,6 +297,33 @@ import tshirtDark1 from '../images/tshirts/darkspace/DARKSPACE-shirtVERSO.jpg'
 
 import tshirtGate0 from '../images/tshirts/gate/Emgalai_s-Gate-tish-recto.jpg'
 import tshirtGate1 from '../images/tshirts/gate/Emgalai_s-Gate-tish-verso.jpg'
+
+// WORKSHOP TAPES
+import af0 from '../images/cassettes/acces_de_faiblesse/71805203_934774896893280_7544485877947301888_o.jpg'
+import af1 from '../images/cassettes/acces_de_faiblesse/71916057_934774903559946_1219914262755934208_o.jpg'
+import af2 from '../images/cassettes/acces_de_faiblesse/72169566_934774980226605_7998612325139480576_o.jpg'
+import af3 from '../images/cassettes/acces_de_faiblesse/72278993_939565739747529_2610847805341696000_o.jpg'
+import af4 from '../images/cassettes/acces_de_faiblesse/72996266_939565966414173_8140139460412047360_o.jpg'
+
+import vaurien0 from '../images/cassettes/vaurien/1.jpg'
+import vaurien1 from '../images/cassettes/vaurien/2.jpeg'
+import vaurien2 from '../images/cassettes/vaurien/3.jpeg'
+import vaurien3 from '../images/cassettes/vaurien/4.jpg'
+import vaurien4 from '../images/cassettes/vaurien/5.jpg'
+import vaurien5 from '../images/cassettes/vaurien/6.jpg'
+import vaurien6 from '../images/cassettes/vaurien/7.jpg'
+
+// WORKSHOP CDS
+import rocket0 from '../images/cd/rocket_gum/43398238_1830088690379585_4025258317772226560_o.jpg'
+import rocket1 from '../images/cd/rocket_gum/43422552_1830088477046273_4342243946647257088_o.jpg'
+import rocket2 from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
+
+// WORKSHOP OTHERS
+import nespresso0 from '../images/workshop_others/nespresso/NESPRESSO312.jpg'
+import nespresso1 from '../images/workshop_others/nespresso/05_DSC_7320.jpg'
+import nespresso2 from '../images/workshop_others/nespresso/08_DSC_8518.jpg'
+import nespresso3 from '../images/workshop_others/nespresso/IMG_8677.jpg'
+import nespresso4 from '../images//workshop_others/nespresso/272660272_1080747219371724_5948941520687875343_n.jpg'
 
 export let aetheria
 aetheria = [aetheria0, aetheria1, aetheria2, aetheria3, aetheria4]
@@ -468,8 +466,8 @@ welcomex = [welcomex0, welcomex1, welcomex2, welcomex3, welcomex4, welcomex5, we
 export let yonl
 yonl = [yonl0, yonl1, yonl2, yonl3, yonl4, yonl5]
 
-export let posters
-posters = [poster0, poster1, poster2, poster3, poster4, poster5, poster6, poster7, poster8]
+// export let posters
+// posters = [poster0, poster1, poster2, poster3, poster4, poster5, poster6, poster7, poster8]
 
 export let logos
 logos = [logo0, logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11]
