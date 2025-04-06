@@ -17,6 +17,8 @@ import aguire2 from '../images/aguire/2.jpg'
 import aguire3 from '../images/aguire/3.jpg'
 import aguire4 from '../images/aguire/4.jpg'
 
+import alcest0 from '../images/alcest/1.jpg'
+
 import alt0 from '../images/alt/1.jpg'
 import alt1 from '../images/alt/2.jpg'
 import alt2 from '../images/alt/3.jpg'
@@ -65,6 +67,7 @@ import chaos5 from '../images/chaos/Capture d’écran 2022-08-16 à 17.06.37.
 import chaos6 from '../images/chaos/Capture d’écran 2022-08-16 à 17.08.32.png'
 import chaos7 from '../images/chaos/Capture d’écran 2022-08-16 à 17.08.48.png'
 import chaos8 from '../images/chaos/Chaos-LS-mockup.jpg'
+import chaos9 from '../images/chaos/InstagramFB-carré.jpg'
 
 import conan0 from '../images/conan/1.jpg'
 import conan1 from '../images/conan/2.jpg'
@@ -134,11 +137,15 @@ import hifi3 from '../images/hifi/plan-hifi-store.jpg'
 import hifi4 from '../images/hifi/logo hifistore.png'
 import hifi5 from '../images/hifi/logo2-hifistore.jpg'
 
+import imperial0 from '../images/imperial/IT-facebook.jpg'
+
 import king0 from '../images/king_dude/1.jpg'
 import king1 from '../images/king_dude/2.jpg'
 import king2 from '../images/king_dude/3.jpg'
 import king3 from '../images/king_dude/4.jpg'
 import king4 from '../images/king_dude/5.jpg'
+
+import lsm0 from '../images/lsm/artworkLSM.jpg'
 
 import metalorgie0 from '../images/metalorgie/18402139_776506359177589_7360995729966066875_o.jpg'
 import metalorgie1 from '../images/metalorgie/18404012_776506432510915_5317633184242945183_o.jpg'
@@ -205,11 +212,15 @@ import rocket0 from '../images/cd/rocket_gum/43398238_1830088690379585_402525831
 import rocket1 from '../images/cd/rocket_gum/43422552_1830088477046273_4342243946647257088_o.jpg'
 import rocket2 from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
 
-import sabbath0 from '../images/sabbath/0.jpg'
-import sabbath1 from '../images/sabbath/1.jpg'
+import sabbath0 from '../images/sabbath/1.jpg'
+import sabbath1 from '../images/sabbath/e7fa63c7-59e5-4d57-8cc9-d955357e07fd.jpg'
 import sabbath2 from '../images/sabbath/mock up fond.png'
 import sabbath3 from '../images/sabbath/mock up FOURREAUfond.png'
 import sabbath4 from '../images/sabbath/Shirt BTWOSMockUp.png'
+
+import stortreng0 from '../images/stortreng/1.jpg'
+import stortreng1 from '../images/stortreng/05.jpg'
+import stortreng2 from '../images/stortreng/T-Shirt-MockUp_STROSTEGN.jpg'
 
 import structure0 from '../images/structure/0.jpg'
 import structure1 from '../images/structure/1.jpg'
@@ -269,6 +280,14 @@ import vaurien4 from '../images/cassettes/vaurien/5.jpg'
 import vaurien5 from '../images/cassettes/vaurien/6.jpg'
 import vaurien6 from '../images/cassettes/vaurien/7.jpg'
 
+import welcomex0 from '../images/welcomex/1.jpg'
+import welcomex1 from '../images/welcomex/2.LLP.jpg'
+import welcomex2 from '../images/welcomex/4.LGPE.jpg'
+import welcomex3 from '../images/welcomex/7.I-AM-LIFE.jpg'
+import welcomex4 from '../images/welcomex/montage-LP2.jpg'
+import welcomex5 from '../images/welcomex/Ombromanie.jpg'
+import welcomex6 from '../images/welcomex/Sent Of Sakura.jpg'
+
 import yonl0 from '../images/yonl/0.jpg'
 import yonl1 from '../images/yonl/1.jpg'
 import yonl2 from '../images/yonl/2.jpg'
@@ -320,6 +339,9 @@ af = [af0, af1, af2, af3, af4]
 export let aguire
 aguire = [aguire0, aguire1, aguire2, aguire3, aguire4]
 
+export let alcest
+alcest = [alcest0]
+
 export let aluk
 aluk = [aluk0, aluk1, aluk2, aluk3]
 
@@ -330,7 +352,7 @@ export let cerbere
 cerbere = [cerbere0, cerbere1]
 
 export let chaos
-chaos = [chaos0, chaos1, chaos2, chaos3, chaos4, chaos5, chaos6, chaos7, chaos8]
+chaos = [chaos0, chaos1, chaos2, chaos3, chaos4, chaos5, chaos6, chaos7, chaos8, chaos9]
 
 export let conan
 conan = [conan0, conan1, conan2, conan3, conan4, conan5]
@@ -368,11 +390,17 @@ godflesh = [godflesh0, godflesh1, godflesh2, godflesh3]
 export let hifi
 hifi = [hifi0, hifi1, hifi2, hifi3, hifi4, hifi5]
 
+export let imperial
+imperial = [imperial0]
+
 export let king
 king = [king0, king1, king2, king3, king4]
 
 export let km25
 km25 = []
+
+export let lsm
+lsm = [lsm0]
 
 export let metalorgie
 metalorgie = [metalorgie0, metalorgie1, metalorgie2, metalorgie3, metalorgie4, metalorgie5, metalorgie6, metalorgie7, metalorgie8]
@@ -404,6 +432,9 @@ rocketgum = [rocket0, rocket1, rocket2]
 export let sabbath
 sabbath = [sabbath0, sabbath1, sabbath2, sabbath3, sabbath4]
 
+export let stortreng
+stortreng = [stortreng0, stortreng1, stortreng2]
+
 export let structure
 structure = [structure0, structure1, structure2, structure3, structure4, structure5]
 
@@ -430,6 +461,9 @@ vaurien = [vaurien0, vaurien1, vaurien2, vaurien3, vaurien4, vaurien5, vaurien6]
 
 export let weidorje
 weidorje = [weidorje0, weidorje1, weidorje2]
+
+export let welcomex
+welcomex = [welcomex0, welcomex1, welcomex2, welcomex3, welcomex4, welcomex5, welcomex6]
 
 export let yonl
 yonl = [yonl0, yonl1, yonl2, yonl3, yonl4, yonl5]
