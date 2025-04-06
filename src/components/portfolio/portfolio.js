@@ -63,18 +63,17 @@ const Portfolio = () => {
 
                     <hr className="line"/>
 
-                    <Link to="/visual-identity" className="home-link">IDENTITÉ VISUELLE</Link>
-                    <Link to="/works" className="home-link">WORKS</Link>
+                    <Link to="/editions" className="home-link">EDITIONS</Link>
                     <Link to="/music" className="home-link">MUSIC</Link>
-                    <Link to="/posters" className="home-link">POSTERS</Link>
+                    <Link to="/posters" className="home-link">GIG POSTERS</Link>
                     <Link to="/logos/all" className="home-link">LOGOS</Link>
 
                     <hr className="line"/>
 
                     <a target="_blank" rel="noopener noreferrer" href="https://emgalaishop.bigcartel.com/"
-                       className="home-link">BIGCARTEL</a>
-                    <a target="_blank" rel="noopener noreferrer" href="https://shop.e-kunst.com/artist/emgalai"
-                       className="home-link">E-KUNST</a>
+                       className="home-link">SHOP</a>
+                    {/* <a target="_blank" rel="noopener noreferrer" href="https://shop.e-kunst.com/artist/emgalai"
+                       className="home-link">E-KUNST</a> */}
                 </animated.div>
                 <Footer/>
             </div>

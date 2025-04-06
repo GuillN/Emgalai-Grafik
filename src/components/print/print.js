@@ -35,12 +35,12 @@ const Print = () => {
 
                     <hr className="line"/>
 
+                    <Link to="/print/workshop" className="home-link">WORKSHOP</Link>
                     <Link to="/print/tshirts" className="home-link">TSHIRTS</Link>
-                    <Link to="/print/vinyls" className="home-link">VINYLS</Link>
+                    <Link to="/print/lp" className="home-link">LP</Link>
                     <Link to="/print/cd" className="home-link">CD</Link>
-                    <Link to="/print/cassettes" className="home-link">CASSETTES</Link>
-                    <Link to="/print/posters" className="home-link">POSTERS</Link>
-                    <Link to="/print/divers" className="home-link">DIVERS</Link>
+                    <Link to="/print/tapes" className="home-link">TAPES</Link>
+                    <Link to="/print/other" className="home-link">OTHER</Link>
 
                 </animated.div>
                 <Footer/>
