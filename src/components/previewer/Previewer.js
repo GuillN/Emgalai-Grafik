@@ -9,6 +9,7 @@ import {
     packagingArray,
     visuIdArray,
     posterArray,
+    workshopArray,
     tshirtArray,
     tapeArray,
     lpArray,
@@ -81,6 +82,11 @@ const Previewer = props => {
             //     setIsPrint(true)
             //     console.log(`State: url: ${url}, array: ${array}, isPrint: ${isPrint}`)
             //     break
+            case '/print/workshops':
+                setUrl('print/workshops')
+                setArray(workshopArray)
+                setIsPrint(true)
+                break
             case '/print/tshirts':
                 setUrl('print/tshirts')
                 setArray(tshirtArray)

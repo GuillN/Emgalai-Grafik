@@ -47,6 +47,9 @@ import packaging_cover from '../images/alt/1.jpg'
 import merch_cover from '../images/aluk_todolo/carré-site.jpg'
 import identity_cover from '../images/hifi/hifi-store-totebag-old.jpg'
 
+// WORKSHOPS COVERS
+import essonne_cover from '../images/workshop_workshops/essonne/1.jpg'
+
 // WORKSHOP TAPES COVERS
 import af_cover from '../images/cassettes/acces_de_faiblesse/70229637_911070585930378_6026411403500322816_n.jpg'
 import vaurien_cover from '../images/cassettes/vaurien/1.jpg'
@@ -117,6 +120,7 @@ import {
     yonl,
     frozen,
     ladlo,
+    essonne,
 } from './images'
 import { logos } from './images'
 
@@ -695,7 +699,19 @@ export const logoArray = {
 // WORKSHOP ARRAYS
 
 export const workshopArray = [
-
+    {
+        images: essonne,
+        cover: essonne_cover,
+        title: 'Essonne',
+        text: "",
+        medIndex: [],
+        smallIndex: [],
+        videos: [],
+        imageIndex: [0, 1, 2],
+        videoIndex: [],
+        squareIndex: [],
+        tinyIndex: []
+    }
 ]
 
 export const tshirtArray = [

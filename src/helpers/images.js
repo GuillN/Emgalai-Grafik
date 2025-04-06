@@ -289,6 +289,12 @@ import logo11 from '../images/logos/logoblanc.jpg'
 // import poster8 from '../images/posters/Untitled-1.jpg'
 // import poster9 from '../images/posters/1.jpg'
 
+// WORKSHOPS
+
+import essonne0 from '../images/workshop_workshops/essonne/1.jpg'
+import essonne1 from '../images/workshop_workshops/essonne/275ae730-8616-4ecd-a1e5-cc25994e9e66.jpg'
+import essonne2 from '../images/workshop_workshops/essonne/475162730_1257877942676690_8182510415666551155_n.jpg'
+
 // WORKSHOP TSHIRTS
 import tshirtRib0 from '../images/tshirts/rib/67567580_1310293545798865_9137664366735261696_o.jpg'
 
@@ -476,6 +482,9 @@ export let logos
 logos = [logo0, logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9, logo10, logo11]
 
 // WORKSHOP
+
+export let essonne
+essonne = [essonne0, essonne1, essonne2]
 
 export let tshirtRib
 tshirtRib = [tshirtRib0]
