@@ -29,7 +29,7 @@ import Nav from "../nav/Nav";
 const Displayer = props => {
 
   const [id] = useState(props.match.params.id)
-  const [pathName] = useState(history.location.pathname.split('/')[1])
+  const [pathName, setPathName] = useState(history.location.pathname.split('/')[1])
   const [client, setClient] = useState({})
   const [images, setImages] = useState([])
   const [videos, setVideos] = useState([])
@@ -37,6 +37,9 @@ const Displayer = props => {
   const [isPrint, setIsPrint] = useState(false)
 
   useEffect(() => {
+    // Update pathname when location changes
+    setPathName(history.location.pathname.split('/')[1]);
+
     switch (pathName) {
       case 'editions':
         setClient(editionArray[id])
@@ -82,9 +85,9 @@ const Displayer = props => {
         break
       case 'logos':
         setClient(logoArray)
-        setImages(logoArray.images)
-        setVideos(logoArray.videos)
-        setImageIndex(logoArray.imageIndex)
+        setImages(logoArray.images || [])
+        setVideos(logoArray.videos || [])
+        setImageIndex(logoArray.imageIndex || [])
         break
       case 'print':
         let printPathName = history.location.pathname.split('/')[2]
@@ -136,7 +139,7 @@ const Displayer = props => {
       default:
         break
     }
-  }, [id, pathName, window.location.href])
+  }, [id, pathName, props.location])
 
   const fade = useSpring({
     from: { opacity: 0, }, opacity: 1,

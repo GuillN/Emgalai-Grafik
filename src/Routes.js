@@ -36,7 +36,7 @@ export default () => {
             {/* <Route path="/works/:id" component={Displayer}/> */}
             <Route path="/posters" exact component={Previewer}/>
             <Route path="/posters/:id" component={Displayer}/>
-            <Route path="/logos" component={Displayer}/>
+            <Route path="/logos" render={(props) => <Displayer key="logos" {...props} />}/>
             {/* <Route path="/logos" exact component={Previewer}/> */}
             {/* <Route path="/logos/:id" exact component={Displayer}/> */}
 
