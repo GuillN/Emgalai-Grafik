@@ -10,7 +10,8 @@ const NavLink = props => {
     const [url] = useState(props.url)
 
     const color = {
-        color: isWhite ? 'white' : 'black'
+        color: isWhite ? 'white' : 'black',
+        textShadow: isWhite ? '1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000' : 'none'
     }
 
     const fade = useSpring({
