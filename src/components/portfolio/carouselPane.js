@@ -59,22 +59,12 @@ class CarouselPane extends React.Component {
                     width="100%"
                     height="100%"
                     config={{
-                        facebook: {
-                            playerVars: {
-                                showinfo: 0,
-                                controls: 0,
-                                modestbranding: 1,
-                                rel: 0,
-                                quality: 'hd1080'
-                            }
-                        },
                         youtube: {
                             playerVars: {
                                 showinfo: 0,
                                 controls: 0,
                                 modestbranding: 1,
-                                rel: 0,
-                                quality: 'hd1080'
+                                rel: 0
                             }
                         }
                     }}
