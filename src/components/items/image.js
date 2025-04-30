@@ -27,7 +27,6 @@ const Image = props => {
         
         // If it contains parentheses or other problematic characters
         if (url.includes('(') || url.includes(')')) {
-            console.log("Problematic URL detected:", url);
             // For browser background-image CSS, we need to escape the parentheses
             return url.replace(/\(/g, '%28').replace(/\)/g, '%29');
         }
