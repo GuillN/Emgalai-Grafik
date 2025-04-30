@@ -19,6 +19,7 @@ import Items from "../items/items";
 import {history} from "../../helpers/history";
 import './Previewer.css'
 import Nav from "../nav/Nav";
+import { useHover } from "../../helpers/HoverContext";
 
 // TODO refactor css
 // Displays previews
@@ -27,6 +28,7 @@ const Previewer = props => {
     const [url, setUrl] = useState('')
     const [array, setArray] = useState({})
     const [isPrint, setIsPrint] = useState(false)
+    const { setHoveredImage } = useHover();
 
     useEffect(() => {
         // console.log(this.props.history.location.pathname)
@@ -116,6 +118,17 @@ const Previewer = props => {
                 break
         }
     }, [array, isPrint, url, window.location.href])
+
+    // Set initial background image when array is loaded and not empty
+    useEffect(() => {
+        if (array && Object.keys(array).length > 0) {
+            // Set the first image of the array as the background
+            const firstImage = array[Object.keys(array)[0]];
+            if (firstImage && firstImage.cover) {
+                setHoveredImage(firstImage.cover);
+            }
+        }
+    }, [array, setHoveredImage]);
 
     const previews = Object.keys(array).map((previewKey, index) => {
         let destination

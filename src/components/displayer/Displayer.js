@@ -23,6 +23,7 @@ import {
 import { history } from "../../helpers/history";
 import './Displayer.css'
 import Nav from "../nav/Nav";
+import { useHover } from "../../helpers/HoverContext";
 
 // TODO refactor css
 // This component displays formatted popup images from an image array
@@ -35,111 +36,149 @@ const Displayer = props => {
   const [videos, setVideos] = useState([])
   const [imageIndex, setImageIndex] = useState([])
   const [isPrint, setIsPrint] = useState(false)
+  const { setHoveredImage } = useHover();
+
+  // Function to sanitize image URLs with special characters
+  const sanitizeImageUrl = (url) => {
+    if (typeof url !== 'string') {
+      return url;
+    }
+    
+    if (url.includes('(') || url.includes(')')) {
+      return url.replace(/\(/g, '%28').replace(/\)/g, '%29');
+    }
+    
+    return url;
+  };
 
   useEffect(() => {
     // Update pathname when location changes
     setPathName(history.location.pathname.split('/')[1]);
 
+    let currentClient = null;
+
     switch (pathName) {
       case 'editions':
-        setClient(editionArray[id])
-        setImages(editionArray[id].images)
-        setVideos(editionArray[id].videos)
-        setImageIndex(editionArray[id].imageIndex)
+        currentClient = editionArray[id];
+        setClient(currentClient);
+        setImages(currentClient.images);
+        setVideos(currentClient.videos);
+        setImageIndex(currentClient.imageIndex);
         break
       case 'music':
-        setClient(musicArray[id])
-        setImages(musicArray[id].images)
-        setVideos(musicArray[id].videos)
-        setImageIndex(musicArray[id].imageIndex)
+        currentClient = musicArray[id];
+        setClient(currentClient);
+        setImages(currentClient.images);
+        setVideos(currentClient.videos);
+        setImageIndex(currentClient.imageIndex);
         break
       case 'albums':
-        setClient(albumArray[id])
-        setImages(albumArray[id].images)
-        setVideos(albumArray[id].videos)
-        setImageIndex(albumArray[id].imageIndex)
+        currentClient = albumArray[id];
+        setClient(currentClient);
+        setImages(currentClient.images);
+        setVideos(currentClient.videos);
+        setImageIndex(currentClient.imageIndex);
         break
       case 'merch':
-        setClient(merchArray[id])
-        setImages(merchArray[id].images)
-        setVideos(merchArray[id].videos)
-        setImageIndex(merchArray[id].imageIndex)
+        currentClient = merchArray[id];
+        setClient(currentClient);
+        setImages(currentClient.images);
+        setVideos(currentClient.videos);
+        setImageIndex(currentClient.imageIndex);
         break
       case 'packaging':
-        setClient(packagingArray[id])
-        setImages(packagingArray[id].images)
-        setVideos(packagingArray[id].videos)
-        setImageIndex(packagingArray[id].imageIndex)
+        currentClient = packagingArray[id];
+        setClient(currentClient);
+        setImages(currentClient.images);
+        setVideos(currentClient.videos);
+        setImageIndex(currentClient.imageIndex);
         break
       case 'visual-identity':
-        setClient(visuIdArray[id])
-        setImages(visuIdArray[id].images)
-        setVideos(visuIdArray[id].videos)
-        setImageIndex(visuIdArray[id].imageIndex)
+        currentClient = visuIdArray[id];
+        setClient(currentClient);
+        setImages(currentClient.images);
+        setVideos(currentClient.videos);
+        setImageIndex(currentClient.imageIndex);
         break
       case 'posters':
-        setClient(posterArray[id])
-        setImages(posterArray[id].images)
-        setVideos(posterArray[id].videos)
-        setImageIndex(posterArray[id].imageIndex)
+        currentClient = posterArray[id];
+        setClient(currentClient);
+        setImages(currentClient.images);
+        setVideos(currentClient.videos);
+        setImageIndex(currentClient.imageIndex);
         break
       case 'logos':
-        setClient(logoArray)
-        setImages(logoArray.images || [])
-        setVideos(logoArray.videos || [])
-        setImageIndex(logoArray.imageIndex || [])
+        currentClient = logoArray;
+        setClient(currentClient);
+        setImages(currentClient.images || []);
+        setVideos(currentClient.videos || []);
+        setImageIndex(currentClient.imageIndex || []);
+        // For logos, we'll clear the background to keep it white
+        setHoveredImage(null);
         break
       case 'print':
         let printPathName = history.location.pathname.split('/')[2]
         switch (printPathName) {
           case 'workshops':
-            setClient(workshopArray[id])
-            setImages(workshopArray[id].images)
-            setVideos(workshopArray[id].videos)
-            setImageIndex(workshopArray[id].imageIndex)
-            setIsPrint(true)
+            currentClient = workshopArray[id];
+            setClient(currentClient);
+            setImages(currentClient.images);
+            setVideos(currentClient.videos);
+            setImageIndex(currentClient.imageIndex);
+            setIsPrint(true);
             break
           case 'tshirts':
-            setClient(tshirtArray[id])
-            setImages(tshirtArray[id].images)
-            setVideos(tshirtArray[id].videos)
-            setImageIndex(tshirtArray[id].imageIndex)
-            setIsPrint(true)
+            currentClient = tshirtArray[id];
+            setClient(currentClient);
+            setImages(currentClient.images);
+            setVideos(currentClient.videos);
+            setImageIndex(currentClient.imageIndex);
+            setIsPrint(true);
             break
           case 'cd':
-            setClient(cdArray[id])
-            setImages(cdArray[id].images)
-            setVideos(cdArray[id].videos)
-            setImageIndex(cdArray[id].imageIndex)
-            setIsPrint(true)
+            currentClient = cdArray[id];
+            setClient(currentClient);
+            setImages(currentClient.images);
+            setVideos(currentClient.videos);
+            setImageIndex(currentClient.imageIndex);
+            setIsPrint(true);
             break
           case 'tapes':
-            setClient(tapeArray[id])
-            setImages(tapeArray[id].images)
-            setVideos(tapeArray[id].videos)
-            setImageIndex(tapeArray[id].imageIndex)
-            setIsPrint(true)
+            currentClient = tapeArray[id];
+            setClient(currentClient);
+            setImages(currentClient.images);
+            setVideos(currentClient.videos);
+            setImageIndex(currentClient.imageIndex);
+            setIsPrint(true);
             break
           case 'lp':
-            setClient(lpArray[id])
-            setImages(lpArray[id].images)
-            setVideos(lpArray[id].videos)
-            setImageIndex(lpArray[id].imageIndex)
-            setIsPrint(true)
+            currentClient = lpArray[id];
+            setClient(currentClient);
+            setImages(currentClient.images);
+            setVideos(currentClient.videos);
+            setImageIndex(currentClient.imageIndex);
+            setIsPrint(true);
             break
           case 'other':
-            setClient(othersArray[id])
-            setImages(othersArray[id].images)
-            setVideos(othersArray[id].videos)
-            setImageIndex(othersArray[id].imageIndex)
-            setIsPrint(true)
+            currentClient = othersArray[id];
+            setClient(currentClient);
+            setImages(currentClient.images);
+            setVideos(currentClient.videos);
+            setImageIndex(currentClient.imageIndex);
+            setIsPrint(true);
             break
         }
         break
       default:
         break
     }
-  }, [id, pathName, props.location])
+
+    // Set the background image to the cover image of the current client
+    // Only if not on the logos page
+    if (pathName !== 'logos' && currentClient && currentClient.cover) {
+      setHoveredImage(sanitizeImageUrl(currentClient.cover));
+    }
+  }, [id, pathName, props.location, setHoveredImage])
 
   const fade = useSpring({
     from: { opacity: 0, }, opacity: 1,
@@ -147,32 +186,32 @@ const Displayer = props => {
   })
 
   const newMapper = (item, index) => {
-    if (client.medIndex.includes(index)) {
+    if (client.medIndex && client.medIndex.includes(index)) {
       return <animated.div style={fade} key={index} className="details-frame-med">
-        <Media index={index} item={item.media} id={id} images={images} sizes={client.images.length} />
+        <Media index={index} item={item.media} id={id} images={images} sizes={client.images ? client.images.length : 0} />
       </animated.div>
-    } else if (client.squareIndex.includes(index)) {
+    } else if (client.squareIndex && client.squareIndex.includes(index)) {
       return <animated.div style={fade} key={index} className="details-frame-square">
-        <Media index={index} item={item.media} id={id} images={images} sizes={client.images.length} />
+        <Media index={index} item={item.media} id={id} images={images} sizes={client.images ? client.images.length : 0} />
       </animated.div>
-    } else if (client.smallIndex.includes(index)) {
+    } else if (client.smallIndex && client.smallIndex.includes(index)) {
       return <animated.div style={fade} key={index} className="details-frame-small">
-        <Media index={index} item={item.media} id={id} images={images} sizes={client.images.length} />
+        <Media index={index} item={item.media} id={id} images={images} sizes={client.images ? client.images.length : 0} />
       </animated.div>
-    } else if (client.tinyIndex.includes(index)) {
+    } else if (client.tinyIndex && client.tinyIndex.includes(index)) {
       return <animated.div style={fade} key={index} className="details-frame-tiny">
-        <Media index={index} item={item.media} id={id} images={images} sizes={client.images.length} />
+        <Media index={index} item={item.media} id={id} images={images} sizes={client.images ? client.images.length : 0} />
       </animated.div>
     } else {
       return <animated.div style={fade} key={index} className="details-frame-big">
-        <Media index={index} item={item.media} id={id} images={images} sizes={client.images.length} />
+        <Media index={index} item={item.media} id={id} images={images} sizes={client.images ? client.images.length : 0} />
       </animated.div>
     }
   }
 
   const mobileMapper = (item, index) => {
     return <animated.div>
-      <PopupImage index={index} item={item} id={id} images={images} sizes={client.images.length} />
+      <PopupImage index={index} item={item} id={id} images={images} sizes={client.images ? client.images.length : 0} />
     </animated.div>
   }
 
@@ -187,7 +226,7 @@ const Displayer = props => {
   }
 
   const medias = images.concat(videos)
-  const indexes = imageIndex.concat(client.videoIndex)
+  const indexes = imageIndex.concat(client.videoIndex || [])
   const objects = medias.map((x, i) => {
     return { "media": x, "index": indexes[i] }
   })

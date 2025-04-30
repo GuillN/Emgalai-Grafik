@@ -1,20 +1,61 @@
 /* eslint-disable */
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import {MobileView, BrowserView} from "react-device-detect"
-
 import back from "../../images/back.svg"
 import next from "../../images/next.svg"
 import Popup from "reactjs-popup"
 import Image from "./image"
+import {useHover} from '../../helpers/HoverContext'
+import { history } from "../../helpers/history";
 
 const PopupImage = props => {
     const [modalIndex, setModalIndex] = useState(0)
+    const [isLogosPage, setIsLogosPage] = useState(false)
+    const { setHoveredImage } = useHover();
 
-    const init = index => setModalIndex(index)
+    // Check if we're on the logos page
+    useEffect(() => {
+        const pathName = history.location.pathname.split('/')[1];
+        setIsLogosPage(pathName === 'logos');
+    }, []);
 
-    const increment = () => setModalIndex(modalIndex + 1)
+    // Function to sanitize image URLs with special characters
+    const sanitizeImageUrl = (url) => {
+        if (typeof url !== 'string') {
+            return url;
+        }
+        
+        if (url.includes('(') || url.includes(')')) {
+            return url.replace(/\(/g, '%28').replace(/\)/g, '%29');
+        }
+        
+        return url;
+    };
 
-    const decrement = () => setModalIndex(modalIndex - 1)
+    const init = index => {
+        setModalIndex(index);
+        // Make sure the background remains when opening modal
+        // Only set background if not on logos page
+        if (!isLogosPage) {
+            setHoveredImage(sanitizeImageUrl(props.item));
+        }
+    }
+
+    const increment = () => {
+        const newIndex = modalIndex + 1;
+        setModalIndex(newIndex);
+        if (!isLogosPage && props.images && props.images[newIndex]) {
+            setHoveredImage(sanitizeImageUrl(props.images[newIndex]));
+        }
+    }
+
+    const decrement = () => {
+        const newIndex = modalIndex - 1;
+        setModalIndex(newIndex);
+        if (!isLogosPage && props.images && props.images[newIndex]) {
+            setHoveredImage(sanitizeImageUrl(props.images[newIndex]));
+        }
+    }
 
     return <div>
         <BrowserView>
