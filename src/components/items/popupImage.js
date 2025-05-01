@@ -25,54 +25,127 @@ const PopupImage = props => {
             return url;
         }
         
-        if (url.includes('(') || url.includes(')')) {
-            return url.replace(/\(/g, '%28').replace(/\)/g, '%29');
-        }
+        // Simple replacement for parentheses and other problematic characters
+        let result = url;
+        result = result.replace(/\(/g, '%28');
+        result = result.replace(/\)/g, '%29');
+        result = result.replace(/ /g, '%20');
+        result = result.replace(/#/g, '%23');
+        result = result.replace(/&/g, '%26');
         
-        return url;
+        return result;
     };
 
     const init = index => {
-        setModalIndex(index);
-        // Make sure the background remains when opening modal
-        // Only set background if not on logos page
-        if (!isLogosPage) {
-            setHoveredImage(sanitizeImageUrl(props.item));
+        // Ensure index is valid
+        if (typeof index === 'number' && index >= 0) {
+            setModalIndex(index);
+            // Make sure the background remains when opening modal
+            // Only set background if not on logos page
+            if (!isLogosPage && props.item) {
+                try {
+                    setHoveredImage(sanitizeImageUrl(props.item));
+                } catch (e) {
+                    console.error("Error in init:", e);
+                }
+            }
+        }
+        
+        // Hide the details container when popup is open
+        const detailsContainer = document.querySelector('.details-container');
+        if (detailsContainer) {
+            detailsContainer.style.display = 'none';
+        }
+        
+        // Hide the navigation elements when popup is open
+        const navSection = document.querySelector('section.nav');
+        if (navSection) {
+            navSection.style.display = 'none';
+        }
+        
+        const header = document.querySelector('header.header');
+        if (header) {
+            header.style.display = 'none';
         }
     }
 
     const increment = () => {
         const newIndex = modalIndex + 1;
-        setModalIndex(newIndex);
-        if (!isLogosPage && props.images && props.images[newIndex]) {
-            setHoveredImage(sanitizeImageUrl(props.images[newIndex]));
+        // Only update if the new index is valid
+        if (props.images && newIndex < props.images.length) {
+            setModalIndex(newIndex);
+            if (!isLogosPage && props.images[newIndex]) {
+                try {
+                    setHoveredImage(sanitizeImageUrl(props.images[newIndex]));
+                } catch (e) {
+                    console.error("Error in increment:", e);
+                }
+            }
         }
     }
 
     const decrement = () => {
         const newIndex = modalIndex - 1;
-        setModalIndex(newIndex);
-        if (!isLogosPage && props.images && props.images[newIndex]) {
-            setHoveredImage(sanitizeImageUrl(props.images[newIndex]));
+        // Only update if the new index is valid
+        if (newIndex >= 0 && props.images) {
+            setModalIndex(newIndex);
+            if (!isLogosPage && props.images[newIndex]) {
+                try {
+                    setHoveredImage(sanitizeImageUrl(props.images[newIndex]));
+                } catch (e) {
+                    console.error("Error in decrement:", e);
+                }
+            }
+        }
+    }
+    
+    const handleClose = () => {
+        // Show the details container when popup is closed
+        const detailsContainer = document.querySelector('.details-container');
+        if (detailsContainer) {
+            detailsContainer.style.display = 'flex';
+        }
+        
+        // Show the navigation elements when popup is closed
+        const navSection = document.querySelector('section.nav');
+        if (navSection) {
+            navSection.style.display = 'flex';
+        }
+        
+        const header = document.querySelector('header.header');
+        if (header) {
+            header.style.display = 'block';
         }
     }
 
     return <div>
         <BrowserView>
-            <Popup trigger={
-                <div>
-                    <Image alt={props.index} src={props.item} mobile={false} popup/>
-                </div>
-            } modal closeOnEscape onOpen={() => init(props.index)}>
+            <Popup 
+                trigger={
+                    <div>
+                        <Image alt={props.index} src={props.item} mobile={false} popup/>
+                    </div>
+                } 
+                modal 
+                closeOnEscape 
+                onOpen={() => init(props.index)}
+                onClose={handleClose}
+            >
+                {close => (
                 <div className="modal-container">
+                    <div className="close-button" onClick={close}>✕</div>
                     {modalIndex === 0 ? <div className="left-arrow"/> :
                         <img src={back} alt="back" className="left-arrow" onClick={decrement}/>}
                     <div className="modal">
-                        <img alt={modalIndex} src={props.images[modalIndex]} className="modal-image"/>
+                        {props.images && props.images[modalIndex] ? 
+                            <img alt={modalIndex} src={props.images[modalIndex]} className="modal-image"/> : 
+                            <div className="error-message">Image not available</div>
+                        }
                     </div>
-                    {modalIndex === props.sizes - 1 ? <div className="right-arrow"/> :
+                    {modalIndex === (props.sizes ? props.sizes - 1 : 0) ? <div className="right-arrow"/> :
                         <img src={next} alt="next" className="right-arrow" onClick={increment}/>}
                 </div>
+                )}
             </Popup>
         </BrowserView>
         <MobileView>

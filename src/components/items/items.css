@@ -37,6 +37,24 @@
 
 .modal-container {
     display: flex;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.close-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
 }
 
 .modal {
@@ -53,13 +71,15 @@
 }
 
 .left-arrow {
-    margin-right: 18vw;
+    margin-right: 8vw;
     width: 15vh;
+    cursor: pointer;
 }
 
 .right-arrow {
-    margin-left: 18vw;
+    margin-left: 8vw;
     width: 15vh;
+    cursor: pointer;
 }
 
 .works-container {

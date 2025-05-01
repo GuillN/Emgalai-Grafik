@@ -44,11 +44,15 @@ const Displayer = props => {
       return url;
     }
     
-    if (url.includes('(') || url.includes(')')) {
-      return url.replace(/\(/g, '%28').replace(/\)/g, '%29');
-    }
+    // Simple replacement for parentheses and other problematic characters
+    let result = url;
+    result = result.replace(/\(/g, '%28');
+    result = result.replace(/\)/g, '%29');
+    result = result.replace(/ /g, '%20');
+    result = result.replace(/#/g, '%23');
+    result = result.replace(/&/g, '%26');
     
-    return url;
+    return result;
   };
 
   useEffect(() => {
@@ -216,24 +220,43 @@ const Displayer = props => {
   }
 
   const sort = (array, counter) => {
+    // Add safety check to prevent infinite recursion
+    if (!array || array.length === 0 || counter >= array.length || sorted.length >= array.length) {
+      return;
+    }
+    
+    // Using a simpler loop approach to avoid deep recursion
+    let found = false;
     for (var i = 0; i < array.length; i++) {
-      if (objects[i].index == counter) {
-        counter++
-        sorted.push(array[i])
+      if (objects[i] && objects[i].index === counter) {
+        counter++;
+        sorted.push(array[i]);
+        found = true;
+        break;
       }
     }
-    if (counter < array.length) sort(array, counter)
+    
+    // Only continue recursion if we found something and haven't processed all items
+    if (found && counter < array.length && sorted.length < array.length) {
+      sort(array, counter);
+    } else if (sorted.length < array.length) {
+      // If we couldn't find the next index, skip to the next counter value
+      sort(array, counter + 1);
+    }
   }
 
-  const medias = images.concat(videos)
-  const indexes = imageIndex.concat(client.videoIndex || [])
+  const medias = images.concat(videos || [])
+  const indexes = (imageIndex || []).concat(client.videoIndex || [])
   const objects = medias.map((x, i) => {
-    return { "media": x, "index": indexes[i] }
+    return { "media": x, "index": indexes[i] !== undefined ? indexes[i] : i }
   })
 
   var sorted = []
 
-  sort(objects, 0)
+  // Only run sort if we have valid data
+  if (medias.length > 0) {
+    sort(objects, 0)
+  }
 
   let displayed = sorted.map(newMapper)
 
@@ -260,3 +283,5 @@ const Displayer = props => {
 }
 
 export default Displayer
+
+
