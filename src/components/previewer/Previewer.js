@@ -33,7 +33,6 @@ const Previewer = props => {
     useEffect(() => {
         // console.log(this.props.history.location.pathname)
         const path = history.location.pathname;
-        console.log(path)
         switch (path) {
             case '/editions':
                 setUrl('editions')
