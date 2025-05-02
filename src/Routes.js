@@ -30,7 +30,7 @@ export default () => {
             <Route path="/merch/:id" component={Displayer}/>
             <Route path="/packaging" exact component={Previewer}/>
             <Route path="/packaging/:id" component={Displayer}/>
-            <Route path="/visual-identity" exact component={Previewer}/>
+            <Route path="/identities" exact component={Previewer}/>
             <Route path="/visual-identity/:id" component={Displayer}/>
             {/* <Route path="/works" exact component={Previewer}/> */}
             {/* <Route path="/works/:id" component={Displayer}/> */}

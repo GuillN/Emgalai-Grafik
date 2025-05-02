@@ -33,6 +33,7 @@ const Previewer = props => {
     useEffect(() => {
         // console.log(this.props.history.location.pathname)
         const path = history.location.pathname;
+        console.log(path)
         switch (path) {
             case '/editions':
                 setUrl('editions')
@@ -59,7 +60,7 @@ const Previewer = props => {
                 setArray(packagingArray)
                 setIsPrint(false)
                 break
-            case '/visual-identity':
+            case '/identities':
                 setUrl('visual-identity')
                 setArray(visuIdArray)
                 setIsPrint(false)
