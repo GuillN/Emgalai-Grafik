@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React, {useState, useEffect} from "react"
 import {MobileView, BrowserView} from "react-device-detect"
-import back from "../../images/back.svg"
-import next from "../../images/next.svg"
+const back = '/images/back.svg'
+const next = '/images/next.svg'
 import Popup from "reactjs-popup"
 import Image from "./image"
 import {useHover} from '../../helpers/HoverContext'
@@ -135,15 +135,15 @@ const PopupImage = props => {
                 <div className="modal-container">
                     <div className="close-button" onClick={close}>✕</div>
                     {modalIndex === 0 ? <div className="left-arrow"/> :
-                        <img src={back} alt="back" className="left-arrow" onClick={decrement}/>}
+                        <img src={back} alt="back" className="left-arrow" onClick={decrement} loading="eager" decoding="async" fetchPriority="high"/>}
                     <div className="modal">
                         {props.images && props.images[modalIndex] ? 
-                            <img alt={modalIndex} src={props.images[modalIndex]} className="modal-image"/> : 
+                            <img alt={modalIndex} src={props.images[modalIndex]} className="modal-image" loading="eager" decoding="async" fetchPriority="high"/> : 
                             <div className="error-message">Image not available</div>
                         }
                     </div>
                     {modalIndex === (props.sizes ? props.sizes - 1 : 0) ? <div className="right-arrow"/> :
-                        <img src={next} alt="next" className="right-arrow" onClick={increment}/>}
+                        <img src={next} alt="next" className="right-arrow" onClick={increment} loading="eager" decoding="async" fetchPriority="high"/>}
                 </div>
                 )}
             </Popup>

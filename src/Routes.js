@@ -8,7 +8,6 @@ import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import Previewer from "./components/previewer/Previewer";
 import Displayer from "./components/displayer/Displayer";
-import PostersDetails from "./components/works/postersDetails";
 // import Shop from "./components/shop/shop";
 import Devis from "./components/devis/devis";
 

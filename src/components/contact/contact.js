@@ -2,8 +2,8 @@
 import React from "react"
 import './contact.css'
 import {BrowserView} from "react-device-detect"
-import phone from '../../images/phone-icon.png'
-import email from '../../images/email-icon.png'
+const phone = '/images/phone-icon.png'
+const email = '/images/email-icon.png'
 import Footer from "../footer/footer"
 import {useSpring, animated} from "react-spring"
 import Form from "./form"
@@ -24,11 +24,11 @@ const Contact = () => {
                 <hr className="line"/>
                 <h2>Ëmgalaï Grafik</h2>
                 <div className="small-container">
-                    <img src={email} alt="mail"/>
+                    <img src={email} alt="mail" loading="lazy" decoding="async" fetchPriority="low"/>
                     <p>emgalai.grafik@gmail.com</p>
                 </div>
                 <div className="small-container">
-                    <img src={phone} alt="phone"/>
+                    <img src={phone} alt="phone" loading="lazy" decoding="async" fetchPriority="low"/>
                     <p>06 25 66 84 63</p>
                 </div>
             </animated.div>

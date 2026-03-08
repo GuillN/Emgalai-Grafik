@@ -35,7 +35,7 @@ class CarouselPane extends React.Component {
         if (isError) {
             return (
                 <div className="carousel-pane error-state">
-                    <img src={fallbackImage} alt="Video unavailable" />
+                    <img src={fallbackImage} alt="Video unavailable" loading="lazy" decoding="async" fetchPriority="low" />
                     <p>Video unavailable</p>
                 </div>
             )

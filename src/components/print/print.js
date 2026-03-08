@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from "react"
 import Footer from "../footer/footer"
-import logo from "../../images/emgalaiprint SIMPLE logoBLANC.png"
+const logo = '/images/emgalaiprint SIMPLE logoBLANC.png'
 import {animated, useSpring} from "react-spring"
 import {Link} from "react-router-dom"
 import {BrowserView, MobileView} from "react-device-detect"
@@ -25,7 +25,7 @@ const Print = () => {
             <div style={{backgroundColor: 'black', height: '100vh'}}>
                 <animated.header style={fade} className="header">
                     <Link to="/" className="logo-link">
-                        <img src={logo} className="logo" alt="logo"/>
+                        <img src={logo} className="logo" alt="logo" loading="eager" decoding="async" fetchPriority="high"/>
                     </Link>
                 </animated.header>
                 <animated.div style={fade} className="home-link-container">

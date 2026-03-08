@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from "react"
 import './about.css'
-import logo from '../../images/emgalai-logo-NOIR.png'
+const logo = '/images/emgalai-logo-NOIR.png'
 import Footer from "../footer/footer"
 import {useSpring, animated} from "react-spring"
 import {MobileView, BrowserView} from "react-device-detect"
@@ -28,7 +28,7 @@ const About = () => {
         <Nav print={false}/>
         <BrowserView>
             <div className="about-content">
-                <animated.img style={fade1} src={logo} alt="logo"/>
+                <animated.img style={fade1} src={logo} alt="logo" loading="eager" decoding="async" fetchPriority="high"/>
                 <animated.h1 style={fade2}>ëmgalaï grafik</animated.h1>
                 <animated.p style={fade3}>Ëmgalaï is a graphic designer and illustrator based in Paris</animated.p>
                 <animated.p style={fade3}>Ëmgalaï started in 2015, after joining Glazart and the Stoned Gatherings crew
@@ -43,7 +43,7 @@ const About = () => {
         </BrowserView>
         <MobileView>
             <div className="about-content-mobile">
-                <animated.img style={fade1} src={logo} alt="logo"/>
+                <animated.img style={fade1} src={logo} alt="logo" loading="eager" decoding="async" fetchPriority="high"/>
                 <animated.h1 style={fade2}>ëmgalaï grafik</animated.h1>
                 <animated.p style={fade3}>Ëmgalaï is a graphic designer and illustrator based in Paris</animated.p>
                 <animated.p style={fade3}>Ëmgalaï started in 2015, after joining Glazart and the Stoned Gatherings

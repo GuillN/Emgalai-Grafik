@@ -1,22 +1,16 @@
 /* eslint-disable */
 import React, {useState, useEffect} from "react"
-import LazyLoad from "react-lazyload"
-import placeholder from '../../images/placeholder.png'
+const placeholder = '/images/placeholder.png'
 import {useHover} from '../../helpers/HoverContext'
 
 const Image = props => {
-    const [load, setLoad] = useState("loading")
-    const [src, setSrc] = useState(placeholder)
+    const [src, setSrc] = useState(props.src || placeholder)
     const [isHovered, setIsHovered] = useState(false)
     const { setHoveredImage } = useHover()
 
     useEffect(() => {
-        load === "loading" ? setSrc(placeholder) : setSrc(props.src)
-    }, [load, props.src])
-
-    const handleLoaded = () => {
-        setLoad("loaded")
-    }
+        setSrc(props.src || placeholder)
+    }, [props.src])
 
     // Special function to handle problematic filenames
     const sanitizeImageUrl = (url) => {
@@ -64,14 +58,20 @@ const Image = props => {
         <div className="image-container" style={{ position: 'relative' }}>
             <img 
                 style={{
-                    ...(load === "loaded" ? {} : {display: 'none'}),
                     ...hoverStyle
                 }}
                 onMouseEnter={mouseEnterHandler}
                 onMouseLeave={mouseLeaveHandler}
-                onLoad={handleLoaded}
+                onError={() => {
+                    if (src !== placeholder) {
+                        setSrc(placeholder)
+                    }
+                }}
                 alt={props.alt}
                 src={src}
+                loading={props.popup ? "eager" : "lazy"}
+                decoding="async"
+                fetchPriority={props.popup ? "high" : "low"}
                 className={props.mobile ? "item-image-mobile" : props.popup ? "item-image-popup" : "item-image"}
             />
         </div>

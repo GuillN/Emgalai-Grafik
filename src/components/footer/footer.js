@@ -4,14 +4,14 @@ import {useSpring, animated} from "react-spring"
 import {history} from "../../helpers/history"
 import "./footer.css"
 
-import twitterBlack from '../../images/twitter.svg'
-import facebookBlack from '../../images/facebook.svg'
-import instagramBlack from '../../images/instagram.svg'
-import behanceBlack from '../../images/behance.svg'
-import twitterWhite from '../../images/twitter-whito.svg'
-import facebookWhite from '../../images/facebook-whito.svg'
-import instagramWhite from '../../images/instagram-whito.svg'
-import behanceWhite from '../../images/behance-whito.svg'
+const twitterBlack = '/images/twitter.svg'
+const facebookBlack = '/images/facebook.svg'
+const instagramBlack = '/images/instagram.svg'
+const behanceBlack = '/images/behance.svg'
+const twitterWhite = '/images/twitter-whito.svg'
+const facebookWhite = '/images/facebook-whito.svg'
+const instagramWhite = '/images/instagram-whito.svg'
+const behanceWhite = '/images/behance-whito.svg'
 
 const Footer = () => {
     const [isWhite, setWhite] = useState(true)
@@ -35,19 +35,19 @@ const Footer = () => {
     return <div className="footer">
             <animated.a style={fade} target="_blank" rel="noopener noreferrer"
                         href="https://twitter.com/EmgalaiGrafik">
-                <img src={twitter} alt="twitter" className="img"/>
+                <img src={twitter} alt="twitter" className="img" loading="lazy" decoding="async" fetchPriority="low"/>
             </animated.a>
             <animated.a style={fade} target="_blank" rel="noopener noreferrer"
                         href="https://www.facebook.com/emgalai/">
-                <img src={facebook} alt="facebook" className="img"/>
+                <img src={facebook} alt="facebook" className="img" loading="lazy" decoding="async" fetchPriority="low"/>
             </animated.a>
             <animated.a style={fade} target="_blank" rel="noopener noreferrer"
                         href="https://www.instagram.com/emgalai.grafik/">
-                <img src={instagram} alt="instagram" className="img"/>
+                <img src={instagram} alt="instagram" className="img" loading="lazy" decoding="async" fetchPriority="low"/>
             </animated.a>
             <animated.a style={fade} target="_blank" rel="noopener noreferrer"
                         href="https://www.behance.net/Emgalai?tracking_source=search_projects_recommended%7Cemgalai">
-                <img src={behance} alt="behance" className="img"/>
+                <img src={behance} alt="behance" className="img" loading="lazy" decoding="async" fetchPriority="low"/>
             </animated.a>
         </div>
 }

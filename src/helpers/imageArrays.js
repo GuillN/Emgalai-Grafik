@@ -1,74 +1,6 @@
 /* eslint-disable */
 
-// PORTFOLIO ARTIST COVERS
-import aetheria_cover from '../images/aetheria/Aetheria.jpg'
-import alt_cover from '../images/alt/1.jpg'
-import aguire_cover from '../images/aguire/artwork.jpg'
-import alcest_cover from '../images/alcest/1.jpg'
-import brus_cover from '../images/brus/uz-1.jpg'
-import aluk_cover from '../images/aluk_todolo/carré-site.jpg'
-import cerbere_cover from '../images/cerbere/CERBERE.jpg'
-import chaos_cover from '../images/chaos/4.png'
-import conan_cover from '../images/conan/3.jpg'
-import cult_cover from '../images/cult_of_fire/3.jpg'
-import cratophane_cover from '../images/cratophane/artwork-web.jpg'
-import darkspace_cover from '../images/darkspace/ZOOM3.jpg'
-import doom_cover from '../images/doom/61171990_1260684680759752_8179678087525433344_o.jpg'
-import edc_cover from '../images/edc/format 5_4.jpg'
-import escarion_cover from '../images/escarion/Escarion-Envy.jpg'
-import glazart_cover from '../images/glazart/glaz-carré.jpg'
-import goblin_cover from '../images/goblin/6.jpg'
-import godflesh_cover from '../images/godflesh/1.jpg'
-import hifi_cover from '../images/hifi/hifi-store-totebag-old.jpg'
-import imperial_cover from '../images/imperial/IT-facebook.jpg'
-import king_cover from '../images/king_dude/2.jpg'
-import lsm_cover from '../images/lsm/artworkLSM.jpg'
-import metalorgie_cover from '../images/metalorgie/carré.jpg'
-import mysticum_cover from '../images/mysticum/3.jpg'
-import ocean_cover from '../images/ocean/the-ocean-v2.jpg'
-import pyramid_cover from '../images/pyramid/0.jpg'
-import rio_cover from '../images/rio/3.jpg'
-import sabbath_cover from '../images/sabbath/1.jpg'
-import stortreng_cover from '../images/stortreng/1.jpg'
-import structure_cover from '../images/structure/5.jpg'
-import sunn_cover from '../images/sunn/1 (1).jpg'
-import sylvaine_cover from '../images/sylvaine/Sylvaine-MockUp_IceGrey.jpg'
-import ulver_cover from '../images/ulver/zoom-3.jpg'
-import ulver_edition_cover from '../images/ulver_edition/mock-up-fourreau.jpg'
-import urbanfest_cover from '../images/urban_fest/12898318_576300052531555_183095972173381426_o.jpg'
-import valve_cover from '../images/valve/1.jpg'
-import weidorje_cover from '../images/weidorje/1.jpg'
-import welcomex_cover from '../images/welcomex/1.jpg'
-import yonl_cover from '../images/yonl/0.jpg'
-
-// PORTFOLIO MUSIC COVERS
-import albums_cover from '../images/aetheria/Aetheria.jpg'
-import packaging_cover from '../images/alt/1.jpg'
-import merch_cover from '../images/aluk_todolo/carré-site.jpg'
-import identity_cover from '../images/hifi/hifi-store-totebag-old.jpg'
-
-// WORKSHOPS COVERS
-import essonne_cover from '../images/workshop_workshops/essonne/1.jpg'
-
-// WORKSHOP TAPES COVERS
-import af_cover from '../images/cassettes/acces_de_faiblesse/70229637_911070585930378_6026411403500322816_n.jpg'
-import vaurien_cover from '../images/cassettes/vaurien/1.jpg'
-// WORKSHOP TSHIRT COVERS
-import dark_tshirt_cover from "../images/tshirts/darkspace/dark_tish_carré.jpg"
-import gate_tshirt_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
-import rib_tshirt_cover from "../images/tshirts/rib/67567580_1310293545798865_9137664366735261696_o.jpg"
-// WORKSHOP CD COVERS
-import rocketgum_cover from '../images/cd/rocket_gum/43436560_1830087720379682_7671300873330360320_o.jpg'
-// WORKSHOP LP COVERS
-import mongolito_cover from '../images/cd/mongolito/carré-en-fait-.jpg'
-// WORKSHOP OTHER COVERS
-import nespresso_cover from '../images/workshop_others/nespresso/08_DSC_8518.jpg'
-import frozen_cover from '../images/workshop_others/frozen/MOCK-UP-PIONS.jpg'
-import ladlo_cover from '../images/workshop_others/ladlo/2.jpeg'
-//  import tshirts_cover from "../images/tshirts/gate/Emgalai_s-Gatezoom1.jpg"
-//  import vinyls_cover from "../images/vinyls/carré-en-fait-.jpg"
-//  import cassettes_cover from "../images/cassettes/70229637_911070585930378_6026411403500322816_n.jpg"
-//  import cd_cover from ""
+import { getImageFromFolder } from './imageLoader'
 
 import {
     aetheria,
@@ -128,7 +60,7 @@ export const editionArray = [
     {
         images: brus,
         videos: [],
-        cover: brus_cover,
+        cover: getImageFromFolder('../images/brus', 'uz-1.jpg'),
         title: 'Brus Undazir',
         imageIndex: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
         videoIndex: [],
@@ -140,7 +72,7 @@ export const editionArray = [
     {
         images: sabbath,
         videos: [],
-        cover: sabbath_cover,
+        cover: getImageFromFolder('../images/sabbath', '1.jpg'),
         title: 'Sabbath 66',
         imageIndex: [0, 1, 2, 3, 4],
         videoIndex: [],
@@ -152,7 +84,7 @@ export const editionArray = [
     {
         images: structure,
         videos: [],
-        cover: structure_cover,
+        cover: getImageFromFolder('../images/structure', '5.jpg'),
         title: 'Structure',
         imageIndex: [0, 1, 2, 3, 4, 5],
         videoIndex: [],
@@ -164,7 +96,7 @@ export const editionArray = [
     {
         images: ulver_edition,
         videos: [],
-        cover: ulver_edition_cover,
+        cover: getImageFromFolder('../images/ulver_edition', 'mock-up-fourreau.jpg'),
         title: 'Ulver',
         imageIndex: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         videoIndex: [],
@@ -180,7 +112,7 @@ export const musicArray = [
     {
         images: [],
         videos: [],
-        cover: albums_cover,
+        cover: getImageFromFolder('../images/aetheria', 'Aetheria.jpg'),
         title: 'Albums',
         imageIndex: [],
         videoIndex: [],
@@ -192,7 +124,7 @@ export const musicArray = [
     {
         images: [],
         videos: [],
-        cover: packaging_cover,
+        cover: getImageFromFolder('../images/alt', '1.jpg'),
         title: 'Packaging',
         imageIndex: [],
         videoIndex: [],
@@ -204,7 +136,7 @@ export const musicArray = [
     {
         images: [],
         videos: [],
-        cover: merch_cover,
+        cover: getImageFromFolder('../images/aluk_todolo', 'carré-site.jpg'),
         title: 'Merch',
         imageIndex: [],
         videoIndex: [],
@@ -216,7 +148,7 @@ export const musicArray = [
     {
         images: [],
         videos: [],
-        cover: identity_cover,
+        cover: getImageFromFolder('../images/hifi', 'hifi-store-totebag-old.jpg'),
         title: 'Identities',
         imageIndex: [],
         videoIndex: [],
@@ -232,7 +164,7 @@ export const albumArray = [
     {
         images: aetheria,
         videos: [],
-        cover: aetheria_cover,
+        cover: getImageFromFolder('../images/aetheria', 'Aetheria.jpg'),
         title: 'Aetheria Constentia',
         imageIndex: [0, 1, 2, 3, 4],
         videoIndex: [],
@@ -243,7 +175,7 @@ export const albumArray = [
     },
     {
         images: aguire,
-        cover: aguire_cover,
+        cover: getImageFromFolder('../images/aguire', 'artwork.jpg'),
         title: 'Aguirre',
         videos: [],
         imageIndex: [0, 1, 2, 3, 4],
@@ -256,7 +188,7 @@ export const albumArray = [
     {
         images: chaos,
         videos: ['8_AlRJW3SRs'],
-        cover: chaos_cover,
+        cover: getImageFromFolder('../images/chaos', '4.png'),
         title: 'Chaos E.T. Sexual',
         imageIndex: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
         videoIndex: [10],
@@ -267,7 +199,7 @@ export const albumArray = [
     },
     {
         images: cratophane,
-        cover: cratophane_cover,
+        cover: getImageFromFolder('../images/cratophane', 'artwork-web.jpg'),
         title: 'Cratophane',
         videos: [],
         imageIndex: [0, 1, 2, 3, 4, 5],
@@ -279,7 +211,7 @@ export const albumArray = [
     },
     {
         images: escarion,
-        cover: escarion_cover,
+        cover: getImageFromFolder('../images/escarion', 'Escarion-Envy.jpg'),
         title: 'Escarion',
         text: "Cover design made for the Australian death metal band Escarion",
         medIndex: [],
@@ -292,7 +224,7 @@ export const albumArray = [
     },
     {
         images: lsm,
-        cover: lsm_cover,
+        cover: getImageFromFolder('../images/lsm', 'artworkLSM.jpg'),
         title: 'Love Sex Machine',
         text: "",
         medIndex: [],
@@ -305,7 +237,7 @@ export const albumArray = [
     },
     {
         images: valve,
-        cover: valve_cover,
+        cover: getImageFromFolder('../images/valve', '1.jpg'),
         title: 'Valve',
         videos: [],
         imageIndex: [0, 1, 2],
@@ -317,7 +249,7 @@ export const albumArray = [
     },
     {
         images: weidorje,
-        cover: weidorje_cover,
+        cover: getImageFromFolder('../images/weidorje', '1.jpg'),
         title: 'Weidorje',
         videos: [],
         imageIndex: [0, 1, 2],
@@ -329,7 +261,7 @@ export const albumArray = [
     },
     {
         images: welcomex,
-        cover: welcomex_cover,
+        cover: getImageFromFolder('../images/welcomex', '1.jpg'),
         title: 'Welcome X',
         videos: [],
         imageIndex: [0, 1, 2, 3, 4, 5, 6],
@@ -344,7 +276,7 @@ export const albumArray = [
 export const merchArray = [
     {
         images: aluk,
-        cover: aluk_cover,
+        cover: getImageFromFolder('../images/aluk_todolo', 'carré-site.jpg'),
         title: 'Aluk Todolo',
         text: "Poster / T-Shirt / Tote bag for the french blackened kraut rock band Aluk Todolo\n\nLimited screenprinted poster for the Lille show\nLimited to 25 copies",
         imageIndex: [0, 1, 2, 3],
@@ -357,7 +289,7 @@ export const merchArray = [
     },
     {
         images: cerbere,
-        cover: cerbere_cover,
+        cover: getImageFromFolder('../images/cerbere', 'CERBERE.jpg'),
         title: 'Cerbere',
         imageIndex: [0, 1],
         videoIndex: [],
@@ -369,7 +301,7 @@ export const merchArray = [
     },
     {
         images: stortreng,
-        cover: stortreng_cover,
+        cover: getImageFromFolder('../images/stortreng', '1.jpg'),
         title: 'Stortreng',
         imageIndex: [0, 1, 2],
         videoIndex: [],
@@ -381,7 +313,7 @@ export const merchArray = [
     },
     {
         images: sylvaine,
-        cover: sylvaine_cover,
+        cover: getImageFromFolder('../images/sylvaine', 'Sylvaine-MockUp_IceGrey.jpg'),
         title: 'Sylvaine',
         imageIndex: [0, 1, 2],
         videoIndex: [],
@@ -393,7 +325,7 @@ export const merchArray = [
     },
     {
         images: yonl,
-        cover: yonl_cover,
+        cover: getImageFromFolder('../images/yonl', '0.jpg'),
         title: 'Year Of No Light',
         imageIndex: [0, 1, 2, 3, 4, 5],
         videoIndex: [],
@@ -405,7 +337,7 @@ export const merchArray = [
     },
     {
         images: ocean,
-        cover: ocean_cover,
+        cover: getImageFromFolder('../images/ocean', 'the-ocean-v2.jpg'),
         title: 'The Ocean',
         imageIndex: [0, 1, 2],
         videoIndex: [],
@@ -421,7 +353,7 @@ export const packagingArray = [
     {
         images: alt,
         videos: [],
-        cover: alt_cover,
+        cover: getImageFromFolder('../images/alt', '1.jpg'),
         title: 'Alt236',
         imageIndex: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         videoIndex: [],
@@ -433,7 +365,7 @@ export const packagingArray = [
     {
         images: pyramid,
         videos: [],
-        cover: pyramid_cover,
+        cover: getImageFromFolder('../images/pyramid', '0.jpg'),
         title: 'Black Pyramid',
         imageIndex: [0, 1, 2, 3, 4, 5, 6, 7],
         videoIndex: [],
@@ -448,7 +380,7 @@ export const visuIdArray = [
     {
         images: hifi,
         videos: [],
-        cover: hifi_cover,
+        cover: getImageFromFolder('../images/hifi', 'hifi-store-totebag-old.jpg'),
         title: 'Hifi Store',
         text: "Graphics for the Hifi store - Paris\n",
         imageIndex: [0, 1, 2, 3, 4, 5],
@@ -461,7 +393,7 @@ export const visuIdArray = [
     {
         images: rio,
         videos: [],
-        cover: rio_cover,
+        cover: getImageFromFolder('../images/rio', '3.jpg'),
         title: 'RIO',
         text: "This was my last year project of my graphic design studies at LISAA\nI redesigned all the graphics of the Rock in Opposition Festival taking place at Albi on an old industrial land\nThis is an underground festival about RIO music / progressive rock / Canterbury scene",
         imageIndex: [0, 1, 2, 3, 4, 5, 6, 7, 8],
@@ -474,7 +406,7 @@ export const visuIdArray = [
     {
         images: structure,
         videos: [],
-        cover: structure_cover,
+        cover: getImageFromFolder('../images/structure', '5.jpg'),
         title: 'Structure',
         imageIndex: [0, 1, 2, 3, 4, 5],
         videoIndex: [],
@@ -486,7 +418,7 @@ export const visuIdArray = [
     {
         images: edc,
         videos: [],
-        cover: edc_cover,
+        cover: getImageFromFolder('../images/edc', 'format 5_4.jpg'),
         title: 'EDC',
         imageIndex: [0, 1, 2],
         videoIndex: [],
@@ -497,7 +429,7 @@ export const visuIdArray = [
     },
     {
         images: glazart,
-        cover: glazart_cover,
+        cover: getImageFromFolder('../images/glazart', 'glaz-carré.jpg'),
         title: 'Glazart',
         text: "Artworks for the night club Glazart, porte de la Villette - Paris",
         medIndex: [],
@@ -510,7 +442,7 @@ export const visuIdArray = [
     },
     {
         images: metalorgie,
-        cover: metalorgie_cover,
+        cover: getImageFromFolder('../images/metalorgie', 'carré.jpg'),
         title: 'Metalorgie Fest',
         text: "Designs for the French webzine Metalorgie's Festival\nLogo / flyers / ads / limited screenprinted poster\nLimited to 30 copies",
         medIndex: [],
@@ -526,7 +458,7 @@ export const visuIdArray = [
  export const posterArray = [
     {
         images: alcest,
-        cover: alcest_cover,
+        cover: getImageFromFolder('../images/alcest', '1.jpg'),
         title: 'Alcest',
         text: "",
         medIndex: [],
@@ -539,7 +471,7 @@ export const visuIdArray = [
     },
     {
         images: conan,
-        cover: conan_cover,
+        cover: getImageFromFolder('../images/conan', '3.jpg'),
         title: 'Conan',
         text: "'Guardians of Heaviness' merch for the UK caveman doom band Conan\n\nLimited 3 colors screenprinted poster for the french shows\nLimited to 50 copies",
         medIndex: [],
@@ -552,7 +484,7 @@ export const visuIdArray = [
     },
     {
         images: cult,
-        cover: cult_cover,
+        cover: getImageFromFolder('../images/cult_of_fire', '3.jpg'),
         title: 'Cult Of Fire',
         text: "Limited screenprinted poster for the black metal band Cult of Fire playing at 'Feux de Beltane' festival\nInk made with pigments from indian traditional holi ceremony and spices\nPigments are mixed with water from Gange river\nHomemade paper made by hand in Nepal\n\nThanks to Capitaine Max for those ingredients",
         medIndex: [],
@@ -565,7 +497,7 @@ export const visuIdArray = [
     },
     {
         images: darkspace,
-        cover: darkspace_cover,
+        cover: getImageFromFolder('../images/darkspace', 'ZOOM3.jpg'),
         title: 'Darkspace',
         text: "Limited screenprinted poster for the industrial black metal band Darkspace playing at 'Feux de Beltane' festival\nPoster incrusted with meteorite powder\nProcess on the video\nLimited to 40 copies",
         medIndex: [],
@@ -578,7 +510,7 @@ export const visuIdArray = [
     },
     {
         images: doom,
-        cover: doom_cover,
+        cover: getImageFromFolder('../images/doom', '61171990_1260684680759752_8179678087525433344_o.jpg'),
         title: 'Doom',
         text: "Screenprinted poster for the UK crust legends Doom\nSpecial ink mixed with ashes of a tear gas grenade puck, found during a 'gilet jaune' protest.\nProcess on the video\nLimited to 50 copies\nAnarchy, Equality and fuck police brutality and Macron fuckin' corrupted system",
         medIndex: [],
@@ -591,7 +523,7 @@ export const visuIdArray = [
     },
     {
         images: goblin,
-        cover: goblin_cover,
+        cover: getImageFromFolder('../images/goblin', '6.jpg'),
         title: 'Goblin',
         text: "Graphics for the special show of legendary italian progressive rock band Goblin, playing at Le Flow - Paris\nFlyer / collector tickets / coasters and limited gatefold screenprinted poster\nProcess on the video made by Guillaume Quincy",
         medIndex: [],
@@ -604,7 +536,7 @@ export const visuIdArray = [
     },
     {
         images: godflesh,
-        cover: godflesh_cover,
+        cover: getImageFromFolder('../images/godflesh', '1.jpg'),
         title: 'Godflesh',
         text: "Limited screenprinted poster for the UK industrial gods Godflesh playing at Roadburn festival in 2018\nPoster laminated with aluminum paper\n Limited to 55 copies",
         medIndex: [],
@@ -617,7 +549,7 @@ export const visuIdArray = [
     },
     {
         images: imperial,
-        cover: imperial_cover,
+        cover: getImageFromFolder('../images/imperial', 'IT-facebook.jpg'),
         title: 'Imperial Triumphant',
         text: "",
         medIndex: [],
@@ -630,7 +562,7 @@ export const visuIdArray = [
     },
     {
         images: king,
-        cover: king_cover,
+        cover: getImageFromFolder('../images/king_dude', '2.jpg'),
         title: 'King Dude',
         text: "Limited screenprinted poster for the US dark folk band King Dude\nPoster laminated with real snake skin\nDesign reused for the french show at 'La Plage de Glazart'\nProcess on the video made by Guillaume Quincy\nLimited to 50 copies",
         medIndex: [],
@@ -644,7 +576,7 @@ export const visuIdArray = [
 
     {
         images: mysticum,
-        cover: mysticum_cover,
+        cover: getImageFromFolder('../images/mysticum', '3.jpg'),
         title: 'Mysticum',
         text: "Designs for the show of the Norwegian industrial black metal pioneers Mysticum playing at Le Flow - Paris\nFlyers / exclusive t-shirt / screenprinted poster limited to 30 copies\n\nDesign used for Headbang Brewery who made a beer especially for the show",
         medIndex: [],
@@ -657,7 +589,7 @@ export const visuIdArray = [
     },
     {
         images: sunn,
-        cover: sunn_cover,
+        cover: getImageFromFolder('../images/sunn', '1 (1).jpg'),
         title: 'Sunn O)))',
         text: "Limited screenprinted poster for US drone metal pioneers SunnO))) playing at Paradiso - Amsterdam\nLimited to 50 copies, mirror paper pasted on the poster",
         medIndex: [],
@@ -670,7 +602,7 @@ export const visuIdArray = [
     },
     {
         images: ulver,
-        cover: ulver_cover,
+        cover: getImageFromFolder('../images/ulver', 'zoom-3.jpg'),
         title: 'Ulver',
         text: "Limited screenprinted poster for 'The Assassination of Julius Caesar' tour of the Norwegian band Ulver\nLimited to 80 copies and incrusted with real bay leaves\n\nProcess on the video by Guillaume Quincy",
         medIndex: [],
@@ -689,9 +621,7 @@ export const logoArray = {
     medIndex: [],
     smallIndex: [],
     videoIndex: [],
-    medIndex: [],
     squareIndex: [],
-    smallIndex: [],
     tinyIndex: [],
     videos: []
 }
@@ -701,7 +631,7 @@ export const logoArray = {
 export const workshopArray = [
     {
         images: essonne,
-        cover: essonne_cover,
+        cover: getImageFromFolder('../images/workshop_workshops/essonne', '1.jpg'),
         title: 'Essonne',
         text: "",
         medIndex: [],
@@ -717,7 +647,7 @@ export const workshopArray = [
 export const tshirtArray = [
     {
         images: tshirtDark,
-        cover: dark_tshirt_cover,
+        cover: getImageFromFolder('../images/tshirts/darkspace', 'dark_tish_carré.jpg'),
         title: 'Darkspace',
         medIndex: [],
         smallIndex: [],
@@ -729,7 +659,7 @@ export const tshirtArray = [
     },
     {
         images: tshirtGate,
-        cover: gate_tshirt_cover,
+        cover: getImageFromFolder('../images/tshirts/gate', 'Emgalai_s-Gatezoom1.jpg'),
         title: 'Ëmgalaï\'s Gate',
         medIndex: [],
         smallIndex: [],
@@ -741,7 +671,7 @@ export const tshirtArray = [
     },
     {
         images: tshirtRib,
-        cover: rib_tshirt_cover,
+        cover: getImageFromFolder('../images/tshirts/rib', '67567580_1310293545798865_9137664366735261696_o.jpg'),
         title: 'Rock In Bourlon',
         medIndex: [],
         smallIndex: [],
@@ -756,7 +686,7 @@ export const tshirtArray = [
 export const lpArray = [
     {
         images: mongolito,
-        cover: mongolito_cover,
+        cover: getImageFromFolder('../images/cd/mongolito', 'carré-en-fait-.jpg'),
         title: 'Mongolito',
         text: "",
         medIndex: [],
@@ -772,7 +702,7 @@ export const lpArray = [
 export const cdArray = [
     {
         images: rocketgum,
-        cover: rocketgum_cover,
+        cover: getImageFromFolder('../images/cd/rocket_gum', '43436560_1830087720379682_7671300873330360320_o.jpg'),
         title: 'Rocket Gum',
         text: "",
         medIndex: [],
@@ -788,7 +718,7 @@ export const cdArray = [
 export const tapeArray = [
     {
         images: af,
-        cover: af_cover,
+        cover: getImageFromFolder('../images/cassettes/acces_de_faiblesse', '70229637_911070585930378_6026411403500322816_n.jpg'),
         title: 'Accès de Faiblesse',
         text: "",
         medIndex: [],
@@ -801,7 +731,7 @@ export const tapeArray = [
     },
     {
         images: vaurien,
-        cover: vaurien_cover,
+        cover: getImageFromFolder('../images/cassettes/vaurien', '1.jpg'),
         title: 'Vaurien',
         text: "",
         medIndex: [],
@@ -817,7 +747,7 @@ export const tapeArray = [
 export const othersArray = [
     {
         images: nespresso,
-        cover: nespresso_cover,
+        cover: getImageFromFolder('../images/workshop_others/nespresso', '08_DSC_8518.jpg'),
         title: 'Nespresso',
         text: "",
         medIndex: [],
@@ -830,7 +760,7 @@ export const othersArray = [
     },
     {
         images: frozen,
-        cover: frozen_cover,
+        cover: getImageFromFolder('../images/workshop_others/frozen', 'MOCK-UP-PIONS.jpg'),
         title: 'Frozen Records',
         text: "",
         medIndex: [],
@@ -843,7 +773,7 @@ export const othersArray = [
     },
     {
         images: ladlo,
-        cover: ladlo_cover,
+        cover: getImageFromFolder('../images/workshop_others/ladlo', '2.jpeg'),
         title: 'LADLO',
         text: "",
         medIndex: [],
@@ -864,7 +794,7 @@ export const othersArray = [
      
 //      {
 //          images: urbanfest,
-//          cover: urbanfest_cover,
+//          cover: getImageFromFolder('../images/urban_fest', '12898318_576300052531555_183095972173381426_o.jpg'),
 //          title: 'Urban Fest',
 //          text: "",
 //          medIndex: [],

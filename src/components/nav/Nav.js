@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import { history } from "../../helpers/history";
 import { whiteUrls } from "../../helpers/urlGroups";
 import './nav.css'
-import logo1Black from "../../images/logo.svg";
-import logo1White from "../../images/logo-whito.svg";
-import logo2Black from "../../images/emgalaiprint SIMPLE logo.svg";
-import logo2White from "../../images/emgalaiprint SIMPLE logoBLANC.png";
+const logo1Black = '/images/logo.svg'
+const logo1White = '/images/logo-whito.svg'
+const logo2Black = '/images/emgalaiprint SIMPLE logo.svg'
+const logo2White = '/images/emgalaiprint SIMPLE logoBLANC.png'
 import NavLink from "./NavLink";
 import { useSpring, animated } from "react-spring"
 // import NavDropLink from "./NavDropLink";
@@ -35,7 +35,7 @@ const Nav = () => {
         {/*LOGO*/}
         <header /*style={isPoster ? {backgroundColor: 'black'} : {}}*/ className="header">
             <Link to="/" className="logo-link">
-                <img src={logo} className="logo" alt="logo" />
+                <img src={logo} className="logo" alt="logo" loading="eager" decoding="async" fetchPriority="high" />
             </Link>
         </header>
 

@@ -1,10 +1,10 @@
 /* eslint-disable */
 import React, {useState} from 'react'
 import './home.css'
-import logo1 from '../../images/logo-whito.svg'
-import logo2 from '../../images/emgalaiprint SIMPLE BLANClogo.svg'
-import video from '../../images/Animated Emgalai print logo.mp4'
-import barre from '../../images/barre centrale(1).png'
+const logo1 = '/images/logo-whito.svg'
+const logo2 = '/images/emgalaiprint SIMPLE BLANClogo.svg'
+const video = '/images/Animated Emgalai print logo.mp4'
+const barre = '/images/barre centrale(1).png'
 import {useSpring, animated} from 'react-spring'
 import AnimatedLogo from "./animatedLogo/animatedLogo"
 import ReactPlayer from "react-player";
