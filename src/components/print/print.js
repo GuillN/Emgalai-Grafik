@@ -1,7 +1,9 @@
 /* eslint-disable */
 import React from "react"
 import Footer from "../footer/footer"
+import "./print.css"
 const logo = '/images/emgalaiprint SIMPLE logoBLANC.png'
+const video = '/images/Animated Emgalai print logo.mp4'
 import {animated, useSpring} from "react-spring"
 import {Link} from "react-router-dom"
 import {BrowserView, MobileView} from "react-device-detect"
@@ -13,16 +15,42 @@ const Print = () => {
         from: {opacity: 0,}, opacity: 1
     })
 
+    const HOLD_BEFORE_END_SECONDS = 2
+
+    const holdOnLastFrame = (video) => {
+        const targetTime = Math.max(0, video.duration - HOLD_BEFORE_END_SECONDS)
+        video.currentTime = targetTime
+        video.pause()
+    }
+
+    const handleVideoTimeUpdate = (event) => {
+        const vid = event.currentTarget
+        if (!Number.isFinite(vid.duration)) return
+        if (vid.currentTime >= vid.duration - HOLD_BEFORE_END_SECONDS) {
+            holdOnLastFrame(vid)
+        }
+    }
+
+    const handleVideoEnded = (event) => {
+        holdOnLastFrame(event.currentTarget)
+    }
+
     return <div>
         <BrowserView>
-            <div style={{backgroundColor: 'black', height: '100vh'}}>
+            <div className="print-page">
                 <Nav print/>
+                <div className="print-logo-video-wrap" aria-hidden="true">
+                    <video className="print-logo-video" autoPlay muted playsInline preload="auto"
+                           onTimeUpdate={handleVideoTimeUpdate} onEnded={handleVideoEnded}>
+                        <source src={video} type="video/mp4"/>
+                    </video>
+                </div>
 
                 <Footer/>
             </div>
         </BrowserView>
         <MobileView>
-            <div style={{backgroundColor: 'black', height: '100vh'}}>
+            <div className="print-page">
                 <animated.header style={fade} className="header">
                     <Link to="/" className="logo-link">
                         <img src={logo} className="logo" alt="logo" loading="eager" decoding="async" fetchPriority="high"/>

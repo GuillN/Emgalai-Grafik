@@ -1,0 +1,44 @@
+.print-page {
+    background-color: black;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.print-logo-video-wrap {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.print-page .nav,
+.print-page .header,
+.print-page .home-link-container {
+    position: relative;
+    z-index: 1;
+}
+
+.print-page .footer {
+    z-index: 1;
+}
+
+.print-logo-video {
+    width: min(60vw, 520px);
+    height: auto;
+    display: block;
+    transform: translateY(6vh);
+}
+
+@media only screen and (max-width: 1024px) {
+    .print-logo-video-wrap {
+        align-items: center;
+    }
+
+    .print-logo-video {
+        width: min(80vw, 420px);
+    }
+}
